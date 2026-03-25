@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body,
 #root {
@@ -17,4 +22,37 @@ body {
   color: #f4f6f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep text copy available on content elements while avoiding accidental visual text caret on static UI */
+:where(h1, h2, h3, h4, h5, h6, p, li, span, strong, em, small, blockquote, figcaption, td, th, label) {
+  user-select: text;
+  caret-color: transparent;
+}
+
+/* Interactive fields keep native caret and text selection behavior */
+:where(input, textarea, [contenteditable='true'], [role='textbox']) {
+  user-select: text;
+  caret-color: auto;
+}
+
+/* Preserve keyboard accessibility outlines only on focus-visible */
+:focus {
+  outline: none;
+}
+
+:where(a, button, input, textarea, select, summary, [role='button'], [tabindex]):focus-visible {
+  outline: 2px solid #1b6ecf;
+  outline-offset: 2px;
+}
+
+/* Decorative assets should not trigger caret/focus interactions */
+img,
+svg[aria-hidden='true'] {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+svg[aria-hidden='true'] {
+  pointer-events: none;
 }

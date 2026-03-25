@@ -1,4 +1,5 @@
 import { CheckCircle2, Wrench } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import './ServicesSection.css'
 import { useLanguage } from '../i18n/LanguageContext'
 
@@ -6,10 +7,12 @@ const serviceAssets = {
   'furniture-assembly': {
     image: '/images/port_.png',
     fillColor: '#d9782d',
+    heroId: 'furniture-home',
   },
   'cleaning-solutions': {
     image: '/images/services_clean.png',
     fillColor: '#2266a6',
+    heroId: 'cleaning-home',
   },
 }
 
@@ -54,14 +57,14 @@ function ServicesSection() {
                 {service.footer && <p className="service-footer">{service.footer}</p>}
 
                 <div className="service-actions">
-                  <a
-                    href="#"
+                  <Link
+                    to={`/${service.id}#${service.heroId}`}
                     className="btn btn-filled"
                     style={{ '--service-color': service.fillColor }}
                   >
                     <Wrench size={16} aria-hidden="true" />
                     <span>{t('servicesSection.knowMore')}</span>
-                  </a>
+                  </Link>
                   <a href="#contato" className="btn btn-outline">
                     {t('servicesSection.contact')}
                   </a>

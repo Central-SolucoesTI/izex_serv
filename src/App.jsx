@@ -11,6 +11,7 @@ import ServiceRegionsArea from './components/ServiceRegionsArea'
 import FloatingButtons from './components/FloatingButtons'
 import CookieConsent from './components/CookieConsent'
 import SEOConfig from './components/SEOConfig'
+import ScrollToHash from './components/ScrollToHash'
 import { useLanguage } from './i18n/LanguageContext'
 import { generateOrganizationSchema, generateLocalBusinessSchema } from './config/seoConfig'
 
@@ -120,6 +121,7 @@ function HomePage() {
 function App() {
   return (
     <>
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />

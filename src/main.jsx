@@ -6,6 +6,12 @@ import './index.css'
 import App from './App.jsx'
 import { LanguageProvider } from './i18n/LanguageContext'
 
+if (typeof document !== 'undefined') {
+  document.documentElement.removeAttribute('contenteditable')
+  document.body.removeAttribute('contenteditable')
+  document.designMode = 'off'
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>
