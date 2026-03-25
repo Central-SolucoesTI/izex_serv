@@ -147,6 +147,67 @@ export const translations = {
         },
       ],
     },
+    howCleaningWorks: {
+      ariaLabel: 'Como funciona o serviço de limpeza',
+      label: 'Cleaning Solutions',
+      title: 'Como funciona?',
+      steps: [
+        {
+          title: 'Entre em contato',
+          description: 'Solicite um orçamento pelo WhatsApp ou telefone.',
+        },
+        {
+          title: 'Escolha o tipo de limpeza',
+          description: 'Adaptamos o serviço às suas necessidades.',
+        },
+        {
+          title: 'Agende o melhor horário',
+          description: 'Escolha a data e o período mais conveniente.',
+        },
+        {
+          title: 'Deixe com a gente!',
+          description: 'Nossa equipe cuidará de tudo para você.',
+        },
+      ],
+      cta: 'Reserve agora a sua limpeza',
+    },
+    whyChooseCleaning: {
+      ariaLabel: 'Por que escolher a Izex Cleaning Solutions',
+      imageAlt: 'Profissional de limpeza sorrindo em uma cozinha',
+      label: 'Cleaning Solutions',
+      title: 'Por que escolher a Izex Cleaning Solutions?',
+      items: [
+        {
+          title: 'Profissionais treinados',
+          content:
+            'Nossa equipe passa por um rigoroso processo de seleção e treinamento contínuo. Nossos colaboradores são especialistas em técnicas de higienização profunda e manuseio correto de equipamentos, garantindo que sua propriedade seja tratada com o máximo cuidado e profissionalismo.',
+        },
+        {
+          title: 'Produtos de qualidade',
+          content:
+            'Utilizamos apenas produtos de limpeza de linha profissional e alta eficiência. Priorizamos fórmulas que removem sujeiras difíceis sem danificar superfícies delicadas e, sempre que possível, utilizamos opções seguras para pets e crianças, deixando um aroma fresco e agradável.',
+        },
+        {
+          title: 'Pontualidade e agilidade',
+          content:
+            'Sabemos que a sua rotina não pode parar. Por isso, cumprimos rigorosamente os horários agendados. Nossa metodologia de trabalho é otimizada para entregar uma limpeza impecável no menor tempo possível, sem nunca sacrificar a atenção aos detalhes.',
+        },
+        {
+          title: 'Serviço personalizado',
+          content:
+            'Entendemos que cada ambiente tem necessidades diferentes. Seja uma limpeza pós-obra, uma higienização para Airbnb ou manutenção residencial recorrente, nós adaptamos nosso checklist de serviços para focar no que é mais importante para você.',
+        },
+      ],
+      footerText: 'Atendemos toda a região com rapidez e compromisso!',
+      cta: 'Solicite um orçamento agora',
+    },
+    cleaningCTA: {
+      ariaLabel: 'Chamada para contato da Cleaning Solutions',
+      title: 'Entre em contato agora mesmo!',
+      subtitle:
+        'Precisa de um serviço rápido e eficiente? Fale com a nossa equipe e solicite um orçamento sem compromisso!',
+      button: 'Chamar no WhatsApp',
+    },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
       label: 'Furniture Assembly',
@@ -396,6 +457,67 @@ export const translations = {
           description: 'Keep your property spotless between one stay and the next.',
         },
       ],
+    },
+    howCleaningWorks: {
+      ariaLabel: 'How the cleaning service works',
+      label: 'Cleaning Solutions',
+      title: 'How does it work?',
+      steps: [
+        {
+          title: 'Get in touch',
+          description: 'Request a quote via WhatsApp or phone.',
+        },
+        {
+          title: 'Choose the type of cleaning',
+          description: 'We tailor the service to your needs.',
+        },
+        {
+          title: 'Schedule the best time',
+          description: 'Choose the most convenient date and time window.',
+        },
+        {
+          title: 'Leave it to us!',
+          description: 'Our team will take care of everything for you.',
+        },
+      ],
+      cta: 'Book your cleaning now',
+    },
+    whyChooseCleaning: {
+      ariaLabel: 'Why choose Izex Cleaning Solutions',
+      imageAlt: 'Smiling cleaning professional in a kitchen',
+      label: 'Cleaning Solutions',
+      title: 'Why choose Izex Cleaning Solutions?',
+      items: [
+        {
+          title: 'Trained professionals',
+          content:
+            'Our team goes through a rigorous selection process and continuous training. Our staff are specialists in deep sanitation techniques and the proper handling of equipment, ensuring your property is treated with maximum care and professionalism.',
+        },
+        {
+          title: 'Quality products',
+          content:
+            'We use only professional-grade, high-efficiency cleaning products. We prioritize formulas that remove tough dirt without damaging delicate surfaces and, whenever possible, use safe options for pets and children, leaving a fresh and pleasant scent.',
+        },
+        {
+          title: 'Punctuality and agility',
+          content:
+            'We know your routine cannot stop. That is why we strictly follow scheduled times. Our work methodology is optimized to deliver impeccable cleaning in the shortest possible time, without ever sacrificing attention to detail.',
+        },
+        {
+          title: 'Personalized service',
+          content:
+            'We understand that every environment has different needs. Whether it is post-construction cleaning, Airbnb sanitation, or recurring residential maintenance, we adapt our service checklist to focus on what matters most to you.',
+        },
+      ],
+      footerText: 'We serve the entire region with speed and commitment!',
+      cta: 'Request an estimate now',
+    },
+    cleaningCTA: {
+      ariaLabel: 'Cleaning Solutions contact call to action',
+      title: 'Get in touch right now!',
+      subtitle:
+        'Need fast and efficient service? Talk to our team and request a free estimate with no obligation!',
+      button: 'Chat on WhatsApp',
     },
     furnitureServices: {
       ariaLabel: 'Our furniture assembly services',

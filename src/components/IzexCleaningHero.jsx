@@ -4,6 +4,9 @@ import './IzexCleaningHero.css'
 import { useLanguage } from '../i18n/LanguageContext'
 import CleaningServices from './CleaningServices'
 import TargetAudienceCleaning from './TargetAudienceCleaning'
+import HowCleaningWorks from './HowCleaningWorks'
+import WhyChooseCleaning from './WhyChooseCleaning'
+import CleaningCTA from './CleaningCTA'
 
 function IzexCleaningHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -78,6 +81,14 @@ function IzexCleaningHero() {
       <CleaningServices />
 
       <TargetAudienceCleaning />
+
+      <HowCleaningWorks />
+
+      <WhyChooseCleaning />
+
+      <CleaningCTA />
+
+      
     </div>
   )
 }
