@@ -208,6 +208,18 @@ export const translations = {
         'Precisa de um serviço rápido e eficiente? Fale com a nossa equipe e solicite um orçamento sem compromisso!',
       button: 'Chamar no WhatsApp',
     },
+    cleaningFooter: {
+      ariaLabel: 'Rodapé da Izex Cleaning Solutions',
+      mainAriaLabel: 'Informações do rodapé de cleaning',
+      socialAriaLabel: 'Redes sociais',
+      navAriaLabel: 'Links de navegação',
+      brand: 'IZEX SERVICES LLC',
+      addressTitle: 'Endereço',
+      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      contactTitle: 'Contato',
+      contactValue: '(978) 727-7471',
+      copyright: '© 2025 Izex. Todos os direitos reservados.',
+    },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
       label: 'Furniture Assembly',
@@ -518,6 +530,18 @@ export const translations = {
       subtitle:
         'Need fast and efficient service? Talk to our team and request a free estimate with no obligation!',
       button: 'Chat on WhatsApp',
+    },
+    cleaningFooter: {
+      ariaLabel: 'Izex Cleaning Solutions footer',
+      mainAriaLabel: 'Cleaning footer information',
+      socialAriaLabel: 'Social media',
+      navAriaLabel: 'Navigation links',
+      brand: 'IZEX SERVICES LLC',
+      addressTitle: 'Address',
+      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      contactTitle: 'Contact',
+      contactValue: '(978) 727-7471',
+      copyright: '© 2025 Izex. All rights reserved.',
     },
     furnitureServices: {
       ariaLabel: 'Our furniture assembly services',

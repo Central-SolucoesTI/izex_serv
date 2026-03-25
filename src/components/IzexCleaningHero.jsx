@@ -7,6 +7,7 @@ import TargetAudienceCleaning from './TargetAudienceCleaning'
 import HowCleaningWorks from './HowCleaningWorks'
 import WhyChooseCleaning from './WhyChooseCleaning'
 import CleaningCTA from './CleaningCTA'
+import CleaningFooter from './CleaningFooter'
 
 function IzexCleaningHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -88,7 +89,7 @@ function IzexCleaningHero() {
 
       <CleaningCTA />
 
-      
+      <CleaningFooter />
     </div>
   )
 }
