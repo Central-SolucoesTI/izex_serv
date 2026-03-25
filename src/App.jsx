@@ -8,6 +8,7 @@ import IzexCleaningHero from './components/IzexCleaningHero'
 import ContactAndSteps from './components/ContactAndSteps'
 import ServiceRegionsArea from './components/ServiceRegionsArea'
 import FloatingButtons from './components/FloatingButtons'
+import CookieConsent from './components/CookieConsent'
 import SEOConfig from './components/SEOConfig'
 import { useLanguage } from './i18n/LanguageContext'
 import { generateOrganizationSchema, generateLocalBusinessSchema } from './config/seoConfig'
@@ -124,6 +125,7 @@ function App() {
         <Route path="/cleaning-solutions" element={<IzexCleaningHero />} />
       </Routes>
       <FloatingButtons />
+      <CookieConsent />
     </>
   )
 }
