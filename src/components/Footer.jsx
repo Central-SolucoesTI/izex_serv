@@ -59,7 +59,12 @@ function Footer() {
         <div className="footer-divider" aria-hidden="true"></div>
 
         <div className="footer-bottom">
-          <p>{t('globalFooter.copyright')} - {t('common.developedBy')}</p>
+          <p>
+            {t('globalFooter.copyright')} -{' '}
+            <a href="https://www.proversolucoes.com.br" target="_blank" rel="noreferrer">
+              {t('common.developedBy')}
+            </a>
+          </p>
           <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>

@@ -45,7 +45,12 @@ function CleaningFooter() {
         <div className="cleaning-footer-divider" aria-hidden="true"></div>
 
         <div className="cleaning-footer-bottom">
-          <p>{t('cleaningFooter.copyright')} - {t('common.developedBy')}</p>
+          <p>
+            {t('cleaningFooter.copyright')} -{' '}
+            <a href="https://www.proversolucoes.com.br" target="_blank" rel="noreferrer">
+              {t('common.developedBy')}
+            </a>
+          </p>
           <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>

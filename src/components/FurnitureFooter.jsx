@@ -47,7 +47,12 @@ function FurnitureFooter() {
         <div className="furniture-footer-divider" aria-hidden="true"></div>
 
         <div className="furniture-footer-bottom">
-          <p>{t('furnitureFooter.copyright')} - {t('common.developedBy')}</p>
+          <p>
+            {t('furnitureFooter.copyright')} -{' '}
+            <a href="https://www.proversolucoes.com.br" target="_blank" rel="noreferrer">
+              {t('common.developedBy')}
+            </a>
+          </p>
           <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>

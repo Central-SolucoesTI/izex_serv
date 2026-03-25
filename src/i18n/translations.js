@@ -102,7 +102,7 @@ export const translations = {
       contactValue: '(978) 727-7471',
       socialAriaLabel: 'Redes sociais',
       navAriaLabel: 'Links de navegação',
-      copyright: '© 2025 Izex. Todos os direitos reservados.',
+      copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     furniturePage: {
       headerAriaLabel: 'Header IZEX furniture ASSEMBLY',
@@ -255,7 +255,7 @@ export const translations = {
       addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
       contactTitle: 'Contato',
       contactValue: '(978) 727-7471',
-      copyright: '© 2025 Izex. Todos os direitos reservados.',
+      copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
@@ -360,7 +360,7 @@ export const translations = {
       brand: 'IZEX SERVICES LLC',
       address: '10200 Falcon Moss Ln Orlando FL 32832',
       phone: '(978) 727-7471',
-      copyright: '© 2025 Izex. Todos os direitos reservados.',
+      copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     floatingButtons: {
       ariaLabel: 'Botoes flutuantes de contato',
@@ -568,7 +568,7 @@ export const translations = {
       contactValue: '(978) 727-7471',
       socialAriaLabel: 'Social media',
       navAriaLabel: 'Navigation links',
-      copyright: '© 2025 Izex. All rights reserved.',
+      copyright: '© 2026 Izex. All rights reserved.',
     },
     furniturePage: {
       headerAriaLabel: 'IZEX furniture ASSEMBLY header',
@@ -717,7 +717,7 @@ export const translations = {
       addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
       contactTitle: 'Contact',
       contactValue: '(978) 727-7471',
-      copyright: '© 2025 Izex. All rights reserved.',
+      copyright: '© 2026 Izex. All rights reserved.',
     },
     furnitureServices: {
       ariaLabel: 'Our furniture assembly services',
@@ -821,7 +821,7 @@ export const translations = {
       brand: 'IZEX SERVICES LLC',
       address: '10200 Falcon Moss Ln Orlando FL 32832',
       phone: '(978) 727-7471',
-      copyright: '© 2025 Izex. All rights reserved.',
+      copyright: '© 2026 Izex. All rights reserved.',
     },
     floatingButtons: {
       ariaLabel: 'Floating contact buttons',

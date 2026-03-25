@@ -189,7 +189,12 @@ export default function PrivacyPolicy() {
       </main>
 
       <footer className="privacy-footer">
-        <p>© 2025 Izex Services LLC. {t('common.developedBy')}</p>
+        <p>
+          © 2026 Izex Services LLC.{' '}
+          <a href="https://www.proversolucoes.com.br" target="_blank" rel="noreferrer">
+            {t('common.developedBy')}
+          </a>
+        </p>
       </footer>
       </div>
     </>
