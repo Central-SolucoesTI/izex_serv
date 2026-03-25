@@ -2,6 +2,7 @@ import { Check } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import './IzexCleaningHero.css'
 import { useLanguage } from '../i18n/LanguageContext'
+import CleaningServices from './CleaningServices'
 
 function IzexCleaningHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -72,6 +73,8 @@ function IzexCleaningHero() {
           </div>
         </div>
       </section>
+
+      <CleaningServices />
     </div>
   )
 }

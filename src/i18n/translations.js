@@ -99,6 +99,32 @@ export const translations = {
       ],
       heroCta: 'Agende agora sua limpeza',
     },
+    cleaningServices: {
+      ariaLabel: 'Nossos serviços de limpeza',
+      label: 'Cleaning Solutions',
+      title: 'Nossos serviços',
+      cards: [
+        {
+          title: 'Limpeza Residencial',
+          description:
+            'Manutenção regular da sua casa. Limpeza profunda para casas novas ou pós-reforma.',
+        },
+        {
+          title: 'Limpeza de Casas de Temporada e Airbnb',
+          description:
+            'Preparação rápida e eficiente entre estadias. Higienização completa para garantir o conforto dos hóspedes.',
+        },
+        {
+          title: 'Limpeza Comercial',
+          description:
+            'Escritórios, lojas e espaços comerciais sempre impecáveis. Agendamento flexível para não atrapalhar o funcionamento do seu negócio.',
+        },
+        {
+          title: 'Serviços Personalizados',
+          description: 'Ajustamos o serviço de acordo com suas necessidades específicas!',
+        },
+      ],
+    },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
       label: 'Furniture Assembly',
@@ -300,6 +326,32 @@ export const translations = {
         'Service across the Orlando region',
       ],
       heroCta: 'Schedule your cleaning now',
+    },
+    cleaningServices: {
+      ariaLabel: 'Our cleaning services',
+      label: 'Cleaning Solutions',
+      title: 'Our services',
+      cards: [
+        {
+          title: 'Residential Cleaning',
+          description:
+            'Regular maintenance for your home. Deep cleaning for new homes or post-renovation.',
+        },
+        {
+          title: 'Vacation Rental and Airbnb Cleaning',
+          description:
+            'Fast and efficient preparation between stays. Complete sanitation to ensure guest comfort.',
+        },
+        {
+          title: 'Commercial Cleaning',
+          description:
+            'Offices, stores, and commercial spaces always spotless. Flexible scheduling to avoid disrupting your business.',
+        },
+        {
+          title: 'Customized Services',
+          description: 'We adapt the service to your specific needs!',
+        },
+      ],
     },
     furnitureServices: {
       ariaLabel: 'Our furniture assembly services',
