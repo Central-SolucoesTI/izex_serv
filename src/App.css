@@ -36,6 +36,12 @@
   display: block;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -53,6 +59,28 @@
 .main-nav a:hover,
 .main-nav a:focus-visible {
   color: #4f6a79;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  border: 1px solid rgba(23, 32, 40, 0.2);
+  border-radius: 0.55rem;
+  overflow: hidden;
+}
+
+.lang-switcher button {
+  border: 0;
+  padding: 0.38rem 0.58rem;
+  background: #ffffff;
+  color: #172028;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-switcher button.active {
+  background: #d8742e;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -174,6 +202,10 @@
   .main-nav a {
     width: 100%;
     padding: 0.4rem 0;
+  }
+
+  .header-actions {
+    margin-left: auto;
   }
 
   .hero-section {

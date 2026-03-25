@@ -1,40 +1,30 @@
 import { CheckCircle2, Wrench } from 'lucide-react'
 import './ServicesSection.css'
+import { useLanguage } from '../i18n/LanguageContext'
 
-const services = [
-  {
-    id: 'furniture-assembly',
-    brand: 'Izex Furniture Assembly',
-    title: 'Izex Furniture Assembly: Montagem de móveis profissional',
-    description:
-      'Seja para sua casa, escritório ou espaço comercial, a Izex Furniture Assembly é a escolha certa para quem busca qualidade e praticidade na montagem e instalação de móveis. Nossa equipe altamente capacitada trabalha com precisão e agilidade, garantindo um serviço impecável.',
-    items: [
-      'Montagem e desmontagem de móveis residenciais e comerciais',
-      'Instalação de prateleiras, painéis e suportes de TV',
-      'Ajustes e reparos em móveis já montados',
-      'Instalação de cortinas, persianas e acessórios',
-      'Atendimento rápido e agendado conforme sua necessidade',
-    ],
-    footer: 'Atendemos toda a região com rapidez e eficiência!',
+const serviceAssets = {
+  'furniture-assembly': {
     image: '/images/port_.png',
     fillColor: '#d9782d',
   },
-  {
-    id: 'cleaning-solutions',
-    brand: 'Izex Cleaning Solutions',
-    title: 'Izex Cleaning Solutions: cuidando do seu espaço',
-    description:
-      'Além da excelência na montagem de móveis, a Izex Services LLC também conta com a Izex Cleaning Solutions, oferecendo serviços de limpeza profissional e conservação para ambientes residenciais e comerciais. Com profissionais treinados e produtos de qualidade, garantimos um serviço eficiente para deixar seu espaço mais limpo e bem cuidado.',
-    items: [],
-    image:
-      '/images/services_clean.png',
+  'cleaning-solutions': {
+    image: '/images/services_clean.png',
     fillColor: '#2266a6',
   },
-]
+}
 
 function ServicesSection() {
+  const { t } = useLanguage()
+  const translatedServices = t('servicesSection.services', [])
+  const services = Array.isArray(translatedServices)
+    ? translatedServices.map((service) => ({
+        ...service,
+        ...serviceAssets[service.id],
+      }))
+    : []
+
   return (
-    <section className="services-section" aria-label="Sub-empresas da IZEX Services LLC">
+    <section className="services-section" aria-label={t('servicesSection.ariaLabel')}>
       <div className="services-inner">
         {services.map((service, index) => {
           const isReverse = index % 2 === 0
@@ -70,10 +60,10 @@ function ServicesSection() {
                     style={{ '--service-color': service.fillColor }}
                   >
                     <Wrench size={16} aria-hidden="true" />
-                    <span>Saber mais</span>
+                    <span>{t('servicesSection.knowMore')}</span>
                   </a>
                   <a href="#contato" className="btn btn-outline">
-                    Entrar em contato
+                    {t('servicesSection.contact')}
                   </a>
                 </div>
               </div>

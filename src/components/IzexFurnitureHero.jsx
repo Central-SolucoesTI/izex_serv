@@ -4,47 +4,62 @@ import './IzexFurnitureHero.css'
 import FurnitureServices from './FurnitureServices'
 import TargetAudienceAndProcess from './TargetAudienceAndProcess'
 import WhyChooseIzex from './WhyChooseIzex'
-
-const highlights = [
-  'Profissionais qualificados',
-  'Atendimento rápido e agendado',
-  'Serviço em toda a região',
-]
+import FurnitureFooter from './FurnitureFooter'
+import { useLanguage } from '../i18n/LanguageContext'
 
 function IzexFurnitureHero() {
+  const { language, setLanguage, t } = useLanguage()
+  const translatedHighlights = t('furniturePage.highlights', [])
+  const highlights = Array.isArray(translatedHighlights) ? translatedHighlights : []
+
   return (
     <div className="furniture-page">
-      <header className="furniture-header" aria-label="Header IZEX furniture ASSEMBLY">
-        <Link className="furniture-brand" to="/furniture-assembly" aria-label="IZEX furniture ASSEMBLY">
+      <header className="furniture-header" aria-label={t('furniturePage.headerAriaLabel')}>
+        <Link className="furniture-brand" to="/furniture-assembly" aria-label={t('furniturePage.brandAriaLabel')}>
           <img
             src="/images/izex_furniture_ass.png"
-            alt="IZEX furniture ASSEMBLY"
+            alt={t('furniturePage.brandAriaLabel')}
             className="furniture-brand-logo"
             width="210"
             height="62"
           />
         </Link>
 
-        <nav className="furniture-nav" aria-label="Navegação principal">
-          <Link to="/">Home</Link>
+        <div className="furniture-header-controls">
+        <nav className="furniture-nav" aria-label={t('furniturePage.navAriaLabel')}>
+          <Link to="/">{t('common.home')}</Link>
           <Link className="active" to="/furniture-assembly" aria-current="page">
-            Furniture Assembly
+            {t('common.furnitureAssembly')}
           </Link>
-          <a href="/#cleaning-solutions">Cleaning Solutions</a>
-          <a href="#contato">Contato</a>
+          <a href="/#cleaning-solutions">{t('common.cleaningSolutions')}</a>
+          <a href="#contato">{t('common.contact')}</a>
         </nav>
+
+        <div className="lang-switcher" aria-label={t('common.languageLabel')}>
+          <button
+            type="button"
+            className={language === 'pt' ? 'active' : ''}
+            onClick={() => setLanguage('pt')}
+          >
+            {t('common.pt')}
+          </button>
+          <button
+            type="button"
+            className={language === 'en' ? 'active' : ''}
+            onClick={() => setLanguage('en')}
+          >
+            {t('common.en')}
+          </button>
+        </div>
+        </div>
       </header>
 
-      <section id="furniture-home" className="furniture-hero" aria-label="Especialistas em Montagem de Móveis">
+      <section id="furniture-home" className="furniture-hero" aria-label={t('furniturePage.heroAriaLabel')}>
         <div className="furniture-overlay">
           <div className="furniture-content">
-            <h1>Especialistas em Montagem de Móveis</h1>
-            <h2>Soluções Rápidas, Profissionais e Sem Complicações!</h2>
-            <p>
-              Está precisando montar ou instalar móveis na sua casa ou empresa? A Izex Furniture
-              Assembly oferece um serviço confiável e eficiente para garantir que seus móveis sejam
-              montados com qualidade e segurança.
-            </p>
+            <h1>{t('furniturePage.heroTitle')}</h1>
+            <h2>{t('furniturePage.heroSubtitle')}</h2>
+            <p>{t('furniturePage.heroDescription')}</p>
 
             <ul className="furniture-highlights">
               {highlights.map((item) => (
@@ -55,9 +70,7 @@ function IzexFurnitureHero() {
               ))}
             </ul>
 
-            <a className="furniture-cta" href="#contato">
-              Solicite um orçamento agora
-            </a>
+            <a className="furniture-cta" href="#contato">{t('furniturePage.heroCta')}</a>
           </div>
         </div>
       </section>
@@ -67,6 +80,8 @@ function IzexFurnitureHero() {
       <TargetAudienceAndProcess />
 
       <WhyChooseIzex />
+      
+      <FurnitureFooter />
     </div>
   )
 }

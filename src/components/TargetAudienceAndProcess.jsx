@@ -1,52 +1,61 @@
 import { Home, Building2, Key, MessageCircle, Calendar, Wrench, CheckCircle2 } from 'lucide-react';
 import './TargetAudienceAndProcess.css';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export default function TargetAudienceAndProcess() {
+  const { t } = useLanguage();
+
+  const translatedAudiences = t('targetAudience.audiences', []);
+  const audienceContent = Array.isArray(translatedAudiences) ? translatedAudiences : [];
+
   const audiences = [
     {
       id: 1,
       icon: Home,
-      title: 'Residências',
-      description: 'Se você acabou de comprar móveis novos ou está reformando sua casa, nós cuidamos da montagem para você!'
+      title: audienceContent[0]?.title || '',
+      description: audienceContent[0]?.description || ''
     },
     {
       id: 2,
       icon: Building2,
-      title: 'Empresas e escritórios',
-      description: 'Organizamos seu espaço corporativo com eficiência, garantindo que seus móveis sejam instalados corretamente.'
+      title: audienceContent[1]?.title || '',
+      description: audienceContent[1]?.description || ''
     },
     {
       id: 3,
       icon: Key,
-      title: 'Administradora de imóveis',
-      description: 'Agilidade e qualidade na montagem de móveis para anfitriões que precisam de um espaço pronto para receber hóspedes.'
+      title: audienceContent[2]?.title || '',
+      description: audienceContent[2]?.description || ''
     }
   ];
+
+  const translatedSteps = t('targetAudience.steps', []);
+  const stepContent = Array.isArray(translatedSteps) ? translatedSteps : [];
 
   const steps = [
     {
       id: 1,
       icon: MessageCircle,
-      title: 'Entre em contato',
-      description: 'Solicite um orçamento pelo WhatsApp ou telefone.'
+      title: stepContent[0]?.title || '',
+      description: stepContent[0]?.description || ''
     },
     {
       id: 2,
       icon: Calendar,
-      title: 'Agende o serviço',
-      description: 'Escolha a melhor data e horário para sua montagem.'
+      title: stepContent[1]?.title || '',
+      description: stepContent[1]?.description || ''
     },
     {
       id: 3,
       icon: Wrench,
-      title: 'Montagem profissional',
-      description: 'Nossa equipe chegará no horário marcado e realizará o serviço com excelência.'
+      title: stepContent[2]?.title || '',
+      description: stepContent[2]?.description || ''
     },
     {
       id: 4,
       icon: CheckCircle2,
-      title: 'Aproveite seu espaço',
-      description: 'Tudo pronto para você desfrutar dos seus móveis com tranquilidade.'
+      title: stepContent[3]?.title || '',
+      description: stepContent[3]?.description || ''
     }
   ];
 
@@ -55,8 +64,8 @@ export default function TargetAudienceAndProcess() {
       {/* Section 1: Target Audience - White Background */}
       <section className="target-audience-section">
         <div className="target-audience-header">
-          <span className="section-label">Furniture Assembly</span>
-          <h2 className="section-title">Para quem é o nosso serviço?</h2>
+          <span className="section-label">{t('targetAudience.sectionLabel')}</span>
+          <h2 className="section-title">{t('targetAudience.title')}</h2>
         </div>
 
         <div className="audience-grid">
@@ -83,8 +92,8 @@ export default function TargetAudienceAndProcess() {
 
         <div className="process-container">
           <div className="process-header">
-            <span className="section-label">Furniture Assembly</span>
-            <h2 className="section-title">Como funciona?</h2>
+            <span className="section-label">{t('targetAudience.sectionLabel')}</span>
+            <h2 className="section-title">{t('targetAudience.processTitle')}</h2>
           </div>
 
           <div className="steps-grid">
@@ -104,7 +113,7 @@ export default function TargetAudienceAndProcess() {
           </div>
 
           <div className="process-cta">
-            <button className="cta-button">Agende seu serviço agora</button>
+            <button className="cta-button">{t('targetAudience.cta')}</button>
           </div>
         </div>
       </section>

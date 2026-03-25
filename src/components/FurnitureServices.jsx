@@ -1,89 +1,47 @@
 import './FurnitureServices.css'
+import { useLanguage } from '../i18n/LanguageContext'
 
-const serviceCards = [
-  {
-    title: 'Montagem e Desmontagem de Móveis',
-    description:
-      'Armários, móveis alto padrão, móveis personalizados, móveis soltos e muito mais!',
-    footer: 'Móveis prontos de lojas como IKEA, Wayfair, Amazon e outras.',
-    image: '/images/port (19).png',
-  },
-  {
-    title: 'Instalação de Suportes e Acessórios',
-    description: 'Prateleiras, suportes de TV, quadros e decoração.',
-    footer: 'Cortinas, persianas e varões.',
-    image: '/images/port (3).png',
-  },
+const cardImages = ['/images/port (19).png', '/images/port (3).png']
+
+const galleryImageSources = [
+  '/images/port_.png',
+  '/images/port.png',
+  '/images/port (2).png',
+  '/images/port (3).png',
+  '/images/port (5).png',
+  '/images/port (9).png',
+  '/images/port (10).png',
+  '/images/port (17).png',
+  '/images/port (19).png',
+  '/images/port (20).png',
+  '/images/port (26).png',
+  '/images/port (27).png',
+  '/images/port (29).png',
+  '/images/port (43).png',
 ]
-
-const galleryImages = [
-  {
-    src: '/images/port_.png',
-    alt: 'Projeto de montagem de móveis 1',
-  },
-  {
-    src: '/images/port.png',
-    alt: 'Projeto de montagem de móveis 2',
-  },
-  {
-    src: '/images/port (2).png',
-    alt: 'Projeto de montagem de móveis 3',
-  },
-  {
-    src: '/images/port (3).png',
-    alt: 'Projeto de montagem de móveis 4',
-  },
-  {
-    src: '/images/port (5).png',
-    alt: 'Projeto de montagem de móveis 5',
-  },
-  {
-    src: '/images/port (9).png',
-    alt: 'Projeto de montagem de móveis 6',
-  },
-  {
-    src: '/images/port (10).png',
-    alt: 'Projeto de montagem de móveis 7',
-  },
-  {
-    src: '/images/port (17).png',
-    alt: 'Projeto de montagem de móveis 8',
-  },
-  {
-    src: '/images/port (19).png',
-    alt: 'Projeto de montagem de móveis 9',
-  },
-  {
-    src: '/images/port (20).png',
-    alt: 'Projeto de montagem de móveis 10',
-  },
-  {
-    src: '/images/port (26).png',
-    alt: 'Projeto de montagem de móveis 11',
-  },
-  {
-    src: '/images/port (27).png',
-    alt: 'Projeto de montagem de móveis 12',
-  },
-  {
-    src: '/images/port (29).png',
-    alt: 'Projeto de montagem de móveis 13',
-  },
-  {
-    src: '/images/port (43).png',
-    alt: 'Projeto de montagem de móveis 14',
-  },
-]
-
-const topRowImages = galleryImages.slice(0, Math.ceil(galleryImages.length / 2))
-const bottomRowImages = galleryImages.slice(Math.ceil(galleryImages.length / 2))
 
 function FurnitureServices() {
+  const { t } = useLanguage()
+  const translatedCards = t('furnitureServices.serviceCards', [])
+  const serviceCards = Array.isArray(translatedCards)
+    ? translatedCards.map((card, index) => ({
+        ...card,
+        image: cardImages[index] || cardImages[0],
+      }))
+    : []
+
+  const galleryImages = galleryImageSources.map((src, index) => ({
+    src,
+    alt: `${t('common.projectImageAlt')} ${index + 1}`,
+  }))
+  const topRowImages = galleryImages.slice(0, Math.ceil(galleryImages.length / 2))
+  const bottomRowImages = galleryImages.slice(Math.ceil(galleryImages.length / 2))
+
   return (
-    <section className="furniture-services" aria-label="Nossos serviços de furniture assembly">
+    <section className="furniture-services" aria-label={t('furnitureServices.ariaLabel')}>
       <div className="furniture-services-inner">
-        <p className="furniture-services-label">Furniture Assembly</p>
-        <h2 className="furniture-services-title">Nossos serviços</h2>
+        <p className="furniture-services-label">{t('furnitureServices.label')}</p>
+        <h2 className="furniture-services-title">{t('furnitureServices.title')}</h2>
 
         <div className="furniture-service-cards">
           {serviceCards.map((card) => (
@@ -98,7 +56,7 @@ function FurnitureServices() {
           ))}
         </div>
 
-        <div className="furniture-gallery" aria-label="Galeria de projetos">
+        <div className="furniture-gallery" aria-label={t('furnitureServices.galleryAriaLabel')}>
           <div className="furniture-gallery-row row-left">
             {[...topRowImages, ...topRowImages].map((image, index) => (
               <figure key={`${image.src}-top-${index}`} className="furniture-gallery-item">

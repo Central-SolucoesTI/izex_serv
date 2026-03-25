@@ -42,6 +42,12 @@
   flex-wrap: wrap;
 }
 
+.furniture-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
 .furniture-nav a {
   text-decoration: none;
   color: #1c2d37;
@@ -144,6 +150,10 @@
 
   .furniture-header {
     gap: 0.8rem;
+  }
+
+  .furniture-header-controls {
+    margin-left: auto;
   }
 
   .furniture-hero {

@@ -1,42 +1,42 @@
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import './Footer.css'
+import { useLanguage } from '../i18n/LanguageContext'
 
 function Footer() {
+  const { t } = useLanguage()
+
   return (
-    <footer id="contato" className="site-footer" aria-label="Rodapé IZEX Services LLC">
-      <section className="footer-cta" aria-label="Chamada para ação">
+    <footer id="contato" className="site-footer" aria-label={t('globalFooter.ariaLabel')}>
+      <section className="footer-cta" aria-label={t('globalFooter.ctaAriaLabel')}>
         <div className="footer-cta-overlay" aria-hidden="true"></div>
         <div className="footer-cta-content">
-          <h2>Entre em contato agora mesmo!</h2>
-          <p>
-            Precisa de um serviço rápido e eficiente? Fale com a nossa equipe e solicite um
-            orçamento sem compromisso!
-          </p>
+          <h2>{t('globalFooter.ctaTitle')}</h2>
+          <p>{t('globalFooter.ctaSubtitle')}</p>
           <a className="cta-button" href="https://wa.me/19787277471" target="_blank" rel="noreferrer">
-            Chamar no WhatsApp
+            {t('common.whatsappCta')}
           </a>
         </div>
       </section>
 
-      <section className="footer-main" aria-label="Informações do rodapé">
+      <section className="footer-main" aria-label={t('globalFooter.infoAriaLabel')}>
         <div className="footer-top">
           <div className="footer-left">
             <img
-              src="/images/izex_logo.png"
+              src="/images/izex_logo_white.png"
               alt="IZEX SERVICES LLC"
               className="footer-logo"
               width="180"
               height="90"
             />
             <div className="footer-block">
-              <h3>Endereço</h3>
-              <p>10200 Falcon Moss Ln Orlando FL 32832</p>
+              <h3>{t('globalFooter.addressTitle')}</h3>
+              <p>{t('globalFooter.addressValue')}</p>
             </div>
             <div className="footer-block">
-              <h3>Contato</h3>
-              <p>(978) 727-7471</p>
+              <h3>{t('globalFooter.contactTitle')}</h3>
+              <p>{t('globalFooter.contactValue')}</p>
             </div>
-            <div className="footer-social" aria-label="Redes sociais">
+            <div className="footer-social" aria-label={t('globalFooter.socialAriaLabel')}>
               <a href="#" aria-label="Instagram">
                 <FaInstagram size={18} aria-hidden="true" />
               </a>
@@ -46,19 +46,19 @@ function Footer() {
             </div>
           </div>
 
-          <nav className="footer-nav" aria-label="Links de navegação">
-            <a href="#home">Home</a>
-            <a href="#furniture-assembly">Furniture Assembly</a>
-            <a href="#cleaning-solutions">Cleaning Solutions</a>
-            <a href="#contato">Contato</a>
+          <nav className="footer-nav" aria-label={t('globalFooter.navAriaLabel')}>
+            <a href="#home">{t('common.home')}</a>
+            <a href="#furniture-assembly">{t('common.furnitureAssembly')}</a>
+            <a href="#cleaning-solutions">{t('common.cleaningSolutions')}</a>
+            <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>
 
         <div className="footer-divider" aria-hidden="true"></div>
 
         <div className="footer-bottom">
-          <p>© 2025 Izex. Todos os direitos reservados.</p>
-          <a href="#">Política de Privacidade</a>
+          <p>{t('globalFooter.copyright')}</p>
+          <a href="#">{t('common.privacyPolicy')}</a>
         </div>
       </section>
     </footer>

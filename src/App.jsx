@@ -4,11 +4,14 @@ import './App.css'
 import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
 import IzexFurnitureHero from './components/IzexFurnitureHero'
+import { useLanguage } from './i18n/LanguageContext'
 
 function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { language, setLanguage, t } = useLanguage()
 
   const closeMenu = () => setIsMenuOpen(false)
+  const navAriaLabel = t('homePage.navAriaLabel')
 
   return (
     <div className="page">
@@ -28,7 +31,7 @@ function HomePage() {
           type="button"
           aria-expanded={isMenuOpen}
           aria-controls="main-navigation"
-          aria-label="Abrir menu"
+          aria-label={t('homePage.menuAriaLabel')}
           onClick={() => setIsMenuOpen((current) => !current)}
         >
           <span></span>
@@ -36,42 +39,56 @@ function HomePage() {
           <span></span>
         </button>
 
-        <nav
-          id="main-navigation"
-          className={`main-nav ${isMenuOpen ? 'open' : ''}`}
-          aria-label="Navegação principal"
-        >
-          <a href="#home" onClick={closeMenu}>
-            Home
-          </a>
-          <Link to="/furniture-assembly" onClick={closeMenu}>
-            Furniture Assembly
-          </Link>
-          <a href="#cleaning-solutions" onClick={closeMenu}>
-            Cleaning Solutions
-          </a>
-          <a href="#contato" onClick={closeMenu}>
-            Contato
-          </a>
-        </nav>
+        <div className="header-actions">
+          <nav
+            id="main-navigation"
+            className={`main-nav ${isMenuOpen ? 'open' : ''}`}
+            aria-label={navAriaLabel}
+          >
+            <a href="#home" onClick={closeMenu}>
+              {t('common.home')}
+            </a>
+            <Link to="/furniture-assembly" onClick={closeMenu}>
+              {t('common.furnitureAssembly')}
+            </Link>
+            <a href="#cleaning-solutions" onClick={closeMenu}>
+              {t('common.cleaningSolutions')}
+            </a>
+            <a href="#contato" onClick={closeMenu}>
+              {t('common.contact')}
+            </a>
+          </nav>
+
+          <div className="lang-switcher" aria-label={t('common.languageLabel')}>
+            <button
+              type="button"
+              className={language === 'pt' ? 'active' : ''}
+              onClick={() => setLanguage('pt')}
+            >
+              {t('common.pt')}
+            </button>
+            <button
+              type="button"
+              className={language === 'en' ? 'active' : ''}
+              onClick={() => setLanguage('en')}
+            >
+              {t('common.en')}
+            </button>
+          </div>
+        </div>
       </header>
 
-      <section id="home" className="hero-section" aria-label="Seção principal IZEX SERVICES LLC">
+      <section id="home" className="hero-section" aria-label={t('homePage.heroAriaLabel')}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>Excelência e Eficiência em Serviços Especializados</h1>
-          <p>
-            Na Izex Services LLC, nossa missão é oferecer soluções práticas e de alta qualidade
-            para sua casa, escritório ou empreendimento. Somos uma holding que gerencia duas
-            empresas especializadas para atender diferentes necessidades com profissionalismo e
-            compromisso:
-          </p>
+          <h1>{t('homePage.heroTitle')}</h1>
+          <p>{t('homePage.heroDescription')}</p>
           <ul className="service-list">
             <li>
-              <strong>Izex Furniture Assembly</strong> - Montagem e Instalação de Móveis
+              <strong>Izex Furniture Assembly</strong> - {t('homePage.serviceItemFurniture')}
             </li>
             <li>
-              <strong>Izex Cleaning Solutions</strong> - Limpeza e Conservação Profissional
+              <strong>Izex Cleaning Solutions</strong> - {t('homePage.serviceItemCleaning')}
             </li>
           </ul>
         </div>

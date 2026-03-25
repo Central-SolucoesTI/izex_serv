@@ -1,32 +1,17 @@
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import './WhyChooseIzex.css'
+import { useLanguage } from '../i18n/LanguageContext'
 
 export default function WhyChooseIzex() {
   const [openIndex, setOpenIndex] = useState(null)
-
-  const faqItems = [
-    {
-      id: 1,
-      title: 'Profissionais treinados',
-      content: 'Nossa equipe é composta por montadores experientes e treinados diretamente pelos fabricantes ou através de rigorosos programas internos. Isso garante que cada móvel seja montado com precisão técnica, seguindo todas as especificações de segurança e design, seja um item de linha ou de alto padrão.'
-    },
-    {
-      id: 2,
-      title: 'Rapidez e eficiência',
-      content: 'Entendemos que seu tempo é precioso. Nossos profissionais trabalham com agilidade e organização para finalizar a montagem no menor tempo possível, sem comprometer a qualidade. Chegamos no horário agendado e deixamos o ambiente limpo e pronto para uso imediato.'
-    },
-    {
-      id: 3,
-      title: 'Atendimento personalizado',
-      content: 'Cada projeto é único. Adaptamos nosso serviço às suas necessidades específicas, seja para uma única peça residencial ou para um grande projeto corporativo. Oferecemos flexibilidade de agendamento e uma comunicação clara e direta durante todo o processo.'
-    },
-    {
-      id: 4,
-      title: 'Orçamento transparente',
-      content: 'Na Izex, não há surpresas. Nossos orçamentos são detalhados e claros, sem taxas ocultas. Você saberá exatamente o que está pagando antes de iniciarmos o serviço. Se necessário, oferecemos consultoria para otimizar o custo-benefício do seu projeto de montagem.'
-    }
-  ]
+  const { t } = useLanguage()
+  const translatedItems = t('whyChoose.items', [])
+  const itemList = Array.isArray(translatedItems) ? translatedItems : []
+  const faqItems = itemList.map((item, index) => ({
+    id: index + 1,
+    ...item,
+  }))
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -43,18 +28,18 @@ export default function WhyChooseIzex() {
             muted
             loop
             poster="/images/why-choose.jpg"
-            aria-label="Vídeo explicativo sobre os serviços da Izex Furniture Assembly"
+            aria-label={t('whyChoose.videoAriaLabel')}
           >
             <source src="/images/faq_forniture_video.mp4" type="video/mp4" />
-            Seu navegador não suporta operação de vídeo.
+            {t('whyChoose.videoUnsupported')}
           </video>
         </div>
 
         {/* Right Column - Content */}
         <div className="why-choose-content-column">
           <div className="why-choose-header">
-            <span className="why-choose-label">Furniture Assembly</span>
-            <h2 className="why-choose-title">Por que escolher a Izex Furniture Assembly?</h2>
+            <span className="why-choose-label">{t('whyChoose.label')}</span>
+            <h2 className="why-choose-title">{t('whyChoose.title')}</h2>
           </div>
 
           {/* Accordion */}
@@ -82,11 +67,11 @@ export default function WhyChooseIzex() {
           </div>
 
           {/* Footer Text */}
-          <p className="why-choose-footer">Atendemos toda a região com rapidez e compromisso!</p>
+          <p className="why-choose-footer">{t('whyChoose.footerText')}</p>
 
           {/* CTA Button */}
           <div className="why-choose-cta">
-            <button className="why-choose-button">Solicite um Orçamento Agora</button>
+            <button className="why-choose-button">{t('whyChoose.cta')}</button>
           </div>
         </div>
       </div>
