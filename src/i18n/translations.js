@@ -22,6 +22,42 @@ export const translations = {
       serviceItemFurniture: 'Montagem e Instalação de Móveis',
       serviceItemCleaning: 'Limpeza e Conservação Profissional',
     },
+    contactAndSteps: {
+      ariaLabel: 'Seção de contato e próximos passos',
+      sectionTitle: 'Fale com a Izex Services LLC',
+      contactTitle: 'Entre em contato conosco',
+      contactDescription:
+        'Tem alguma dúvida ou quer solicitar um orçamento? Nossa equipe está pronta para te atender!',
+      channels: ['(978) 833-5051', 'WhatsApp', 'info@izexservices.com'],
+      stepsTitle: 'Próximos passos',
+      steps: [
+        {
+          title: 'Entre em contato',
+          description: 'Nos chame pelo WhatsApp ou envie um e-mail com suas dúvidas.',
+        },
+        {
+          title: 'Solicite um orçamento',
+          description: 'Informamos o valor do serviço de acordo com sua necessidade.',
+        },
+        {
+          title: 'Agende um horário',
+          description: 'Escolha o melhor dia e horário para o atendimento.',
+        },
+        {
+          title: 'Serviço realizado!',
+          description: 'Nossa equipe executa o trabalho com qualidade e eficiência.',
+        },
+      ],
+    },
+    serviceRegionsArea: {
+      ariaLabel: 'Seção de regiões atendidas',
+      mapTitle: 'Mapa de Orlando e região',
+      title: 'Regiões atendidas',
+      description:
+        'Atendemos diversas cidades e regiões próximas de Orlando e Central Flórida, garantindo um serviço ágil e eficiente.',
+      instruction: 'Entre em contato para verificar a disponibilidade na sua localidade.',
+      cities: ['Orlando', 'Clearwont', 'Kissimmee', 'Entre outras'],
+    },
     servicesSection: {
       ariaLabel: 'Sub-empresas da IZEX Services LLC',
       knowMore: 'Saber mais',
@@ -348,6 +384,42 @@ export const translations = {
         'At Izex Services LLC, our mission is to deliver practical, high-quality solutions for your home, office, or business. We are a holding company managing two specialized businesses to serve different needs with professionalism and commitment:',
       serviceItemFurniture: 'Furniture Assembly and Installation',
       serviceItemCleaning: 'Professional Cleaning and Maintenance',
+    },
+    contactAndSteps: {
+      ariaLabel: 'Contact and next steps section',
+      sectionTitle: 'Talk to Izex Services LLC',
+      contactTitle: 'Get in touch with us',
+      contactDescription:
+        'Have any questions or want to request a quote? Our team is ready to help you!',
+      channels: ['(978) 833-5051', 'WhatsApp', 'info@izexservices.com'],
+      stepsTitle: 'Next steps',
+      steps: [
+        {
+          title: 'Get in touch',
+          description: 'Send us a WhatsApp message or email with your questions.',
+        },
+        {
+          title: 'Request a quote',
+          description: 'We provide the service cost based on your specific need.',
+        },
+        {
+          title: 'Schedule a time',
+          description: 'Choose the best day and time for the service.',
+        },
+        {
+          title: 'Service completed!',
+          description: 'Our team performs the work with quality and efficiency.',
+        },
+      ],
+    },
+    serviceRegionsArea: {
+      ariaLabel: 'Service regions section',
+      mapTitle: 'Orlando area map',
+      title: 'Service regions',
+      description:
+        'We serve multiple cities and areas near Orlando and Central Florida, ensuring fast and efficient service.',
+      instruction: 'Get in touch to check availability in your area.',
+      cities: ['Orlando', 'Clearwont', 'Kissimmee', 'And more'],
     },
     servicesSection: {
       ariaLabel: 'IZEX Services LLC sub-brands',

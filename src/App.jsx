@@ -5,6 +5,8 @@ import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
 import IzexFurnitureHero from './components/IzexFurnitureHero'
 import IzexCleaningHero from './components/IzexCleaningHero'
+import ContactAndSteps from './components/ContactAndSteps'
+import ServiceRegionsArea from './components/ServiceRegionsArea'
 import { useLanguage } from './i18n/LanguageContext'
 
 function HomePage() {
@@ -96,6 +98,8 @@ function HomePage() {
       </section>
 
       <ServicesSection />
+      <ContactAndSteps />
+      <ServiceRegionsArea />
       <Footer />
     </div>
   )
