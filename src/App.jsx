@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import ServicesSection from './components/ServicesSection'
+import Footer from './components/Footer'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -75,8 +76,7 @@ function App() {
       </section>
 
       <ServicesSection />
-
-      <div id="contato" className="contact-anchor" aria-hidden="true"></div>
+      <Footer />
     </div>
   )
 }

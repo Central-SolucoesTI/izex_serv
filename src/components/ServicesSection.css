@@ -1,7 +1,7 @@
 .services-section {
   position: relative;
   padding: 6rem 0 7rem;
-  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  background: linear-gradient(180deg, rgba(247, 251, 255, 0.92) 0%, rgba(255, 255, 255, 0.94) 100%);
   overflow: hidden;
 }
 
@@ -9,22 +9,23 @@
 .services-section::after {
   content: '';
   position: absolute;
-  top: 7rem;
-  width: 220px;
-  height: 220px;
-  background-image: url('/images/izex_logo.png');
+  width: 480px;
+  height: 280px;
+  background-image: url('/images/bg_for_for.png');
   background-repeat: no-repeat;
   background-size: contain;
-  opacity: 0.07;
+  opacity: 0.12;
   pointer-events: none;
 }
 
 .services-section::before {
-  left: -54px;
+  top: 0;
+  left: 0;
 }
 
 .services-section::after {
-  right: -54px;
+  right: 0;
+  bottom: 0;
 }
 
 .services-inner {
@@ -171,16 +172,17 @@
 
   .services-section::before,
   .services-section::after {
-    width: 155px;
-    height: 155px;
-    top: 5rem;
+    width: 160px;
+    height: 160px;
   }
 
   .services-section::before {
-    left: -60px;
+    top: 0;
+    left: 0;
   }
 
   .services-section::after {
-    right: -60px;
+    right: 0;
+    bottom: 0;
   }
 }

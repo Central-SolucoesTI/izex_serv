@@ -16,8 +16,7 @@ const services = [
       'Atendimento rápido e agendado conforme sua necessidade',
     ],
     footer: 'Atendemos toda a região com rapidez e eficiência!',
-    image:
-      'https://images.unsplash.com/photo-1582582494700-54d3f1c4ad0d?auto=format&fit=crop&w=1300&q=80',
+    image: '/images/port_.png',
     fillColor: '#d9782d',
   },
   {
@@ -28,7 +27,7 @@ const services = [
       'Além da excelência na montagem de móveis, a Izex Services LLC também conta com a Izex Cleaning Solutions, oferecendo serviços de limpeza profissional e conservação para ambientes residenciais e comerciais. Com profissionais treinados e produtos de qualidade, garantimos um serviço eficiente para deixar seu espaço mais limpo e bem cuidado.',
     items: [],
     image:
-      'https://images.unsplash.com/photo-1632837103052-4205fda3408b?auto=format&fit=crop&w=1300&q=80',
+      '/images/services_clean.png',
     fillColor: '#2266a6',
   },
 ]
