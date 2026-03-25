@@ -1,0 +1,186 @@
+.services-section {
+  position: relative;
+  padding: 6rem 0 7rem;
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.services-section::before,
+.services-section::after {
+  content: '';
+  position: absolute;
+  top: 7rem;
+  width: 220px;
+  height: 220px;
+  background-image: url('/images/izex_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.services-section::before {
+  left: -54px;
+}
+
+.services-section::after {
+  right: -54px;
+}
+
+.services-inner {
+  width: min(1150px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'content image';
+  gap: 3rem;
+  align-items: center;
+}
+
+.service-row.reverse {
+  grid-template-areas: 'image content';
+}
+
+.service-content {
+  grid-area: content;
+  color: #253643;
+}
+
+.service-image-wrap {
+  grid-area: image;
+}
+
+.service-brand {
+  margin: 0 0 0.7rem;
+  color: #4c6172;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.service-content h2 {
+  margin: 0;
+  color: #13222c;
+  font-size: clamp(1.65rem, 2.7vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.service-description {
+  margin: 1rem 0 0;
+  color: #3c5362;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.service-items {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.service-items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: #223643;
+  line-height: 1.5;
+}
+
+.service-items li svg {
+  margin-top: 0.18rem;
+  color: #2f6f4f;
+  flex: none;
+}
+
+.service-footer {
+  margin: 1rem 0 0;
+  font-weight: 600;
+  color: #17354a;
+}
+
+.service-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 1.35rem;
+  box-shadow: 0 20px 35px rgba(25, 44, 60, 0.16);
+}
+
+.service-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-filled {
+  color: #ffffff;
+  background: var(--service-color);
+  box-shadow: 0 8px 16px rgba(15, 36, 52, 0.25);
+}
+
+.btn-outline {
+  color: #264051;
+  border: 1.5px solid #264051;
+  background: transparent;
+}
+
+@media (max-width: 980px) {
+  .services-section {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .service-row,
+  .service-row.reverse {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'image'
+      'content';
+    gap: 1.6rem;
+  }
+
+  .services-inner {
+    gap: 3.4rem;
+  }
+
+  .services-section::before,
+  .services-section::after {
+    width: 155px;
+    height: 155px;
+    top: 5rem;
+  }
+
+  .services-section::before {
+    left: -60px;
+  }
+
+  .services-section::after {
+    right: -60px;
+  }
+}

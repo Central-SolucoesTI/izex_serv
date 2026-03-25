@@ -1,120 +1,83 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import ServicesSection from './components/ServicesSection'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
+    <div className="page">
+      <header className="site-header">
+        <a className="brand" href="#home" aria-label="IZEX SERVICES LLC">
+          <img
+            className="brand-mark"
+            src="/images/izex_logo.png"
+            alt="Logo IZEX Services LLC"
+            width="82"
+            height="82"
+          />
+        </a>
+
         <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          className="menu-toggle"
+          type="button"
+          aria-expanded={isMenuOpen}
+          aria-controls="main-navigation"
+          aria-label="Abrir menu"
+          onClick={() => setIsMenuOpen((current) => !current)}
         >
-          Count is {count}
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-      </section>
 
-      <div className="ticks"></div>
+        <nav
+          id="main-navigation"
+          className={`main-nav ${isMenuOpen ? 'open' : ''}`}
+          aria-label="Navegação principal"
+        >
+          <a href="#home" onClick={closeMenu}>
+            Home
+          </a>
+          <a href="#furniture-assembly" onClick={closeMenu}>
+            Furniture Assembly
+          </a>
+          <a href="#cleaning-solutions" onClick={closeMenu}>
+            Cleaning Solutions
+          </a>
+          <a href="#contato" onClick={closeMenu}>
+            Contato
+          </a>
+        </nav>
+      </header>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
+      <section id="home" className="hero-section" aria-label="Seção principal IZEX SERVICES LLC">
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <h1>Excelência e Eficiência em Serviços Especializados</h1>
+          <p>
+            Na Izex Services LLC, nossa missão é oferecer soluções práticas e de alta qualidade
+            para sua casa, escritório ou empreendimento. Somos uma holding que gerencia duas
+            empresas especializadas para atender diferentes necessidades com profissionalismo e
+            compromisso:
+          </p>
+          <ul className="service-list">
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
+              <strong>Izex Furniture Assembly</strong> - Montagem e Instalação de Móveis
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
+              <strong>Izex Cleaning Solutions</strong> - Limpeza e Conservação Profissional
             </li>
           </ul>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <ServicesSection />
+
+      <div id="contato" className="contact-anchor" aria-hidden="true"></div>
+    </div>
   )
 }
 
