@@ -1,6 +1,7 @@
 import { Check } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import './IzexFurnitureHero.css'
+import FurnitureServices from './FurnitureServices'
 
 const highlights = [
   'Profissionais qualificados',
@@ -58,6 +59,8 @@ function IzexFurnitureHero() {
           </div>
         </div>
       </section>
+
+      <FurnitureServices />
     </div>
   )
 }
