@@ -44,7 +44,7 @@ function CleaningFooter() {
         <div className="cleaning-footer-divider" aria-hidden="true"></div>
 
         <div className="cleaning-footer-bottom">
-          <p>{t('cleaningFooter.copyright')}</p>
+          <p>{t('cleaningFooter.copyright')} - {t('common.developedBy')}</p>
           <a href="#">{t('common.privacyPolicy')}</a>
         </div>
       </section>

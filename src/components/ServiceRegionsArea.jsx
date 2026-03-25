@@ -26,7 +26,7 @@ function ServiceRegionsArea() {
         <div className="service-regions-map-wrap">
           <iframe
             title={t('serviceRegionsArea.mapTitle')}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112222.235536762!2d-81.42519468995695!3d28.48120716383438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xabc1b9df1c17ac73%3A0x76202a3704322038!2sCF%20Floor%20Designs!5e0!3m2!1spt-BR!2sbr!4v1774467257020!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.260447699234!2d-81.24017892579045!3d28.41139706468652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e761ed9ff300ff%3A0x1c4a479252e27f9a!2s10200%20Falcon%20Moss%20Ln%2C%20Orlando%2C%20FL%2032832%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1774469959575!5m2!1spt-BR!2sbr"
             width="600"
             height="450"
             style={{ border: 0 }}

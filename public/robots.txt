@@ -1,0 +1,38 @@
+# Robots.txt para Izex Services LLC
+# Gerado em 2024-03-25
+
+# Permitir todos os bots de busca
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.git
+Disallow: /node_modules
+Disallow: /*.json
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Permitir específicamente Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Permitir Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloquear bots maliciosos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://izexservices.com/sitemap.xml
+
+# Comment: Este arquivo ajuda a controlar como os bots rastreiam o site
+# Comment: Adicione URLs específicas conforme necessário

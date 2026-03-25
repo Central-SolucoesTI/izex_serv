@@ -68,17 +68,19 @@
   margin-top: 1rem;
   display: grid;
   gap: 0.72rem;
+  overflow: visible;
 }
 
 .step-card-gradient {
-  padding: 1px;
+  padding: 2px;
   border-radius: 0.9rem;
   background: linear-gradient(120deg, #d9782d 0%, #2266a6 100%);
+  overflow: visible;
 }
 
 .step-card-content {
   background: #ffffff;
-  border-radius: calc(0.9rem - 1px);
+  border-radius: calc(0.9rem - 2px);
   padding: 0.9rem 1rem;
 }
 

@@ -8,6 +8,8 @@ import HowCleaningWorks from './HowCleaningWorks'
 import WhyChooseCleaning from './WhyChooseCleaning'
 import CleaningCTA from './CleaningCTA'
 import CleaningFooter from './CleaningFooter'
+import SEOConfig from './SEOConfig'
+import { generateLocalBusinessSchema } from '../config/seoConfig'
 
 function IzexCleaningHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -15,7 +17,13 @@ function IzexCleaningHero() {
   const highlights = Array.isArray(translatedHighlights) ? translatedHighlights : []
 
   return (
-    <div className="cleaning-page">
+    <>
+      <SEOConfig
+        page="cleaning"
+        language={language}
+        schemaData={generateLocalBusinessSchema('cleaning-solutions')}
+      />
+      <div className="cleaning-page">
       <header className="cleaning-header" aria-label={t('cleaningPage.headerAriaLabel')}>
         <Link className="cleaning-brand" to="/cleaning-solutions" aria-label={t('cleaningPage.brandAriaLabel')}>
           <img
@@ -90,7 +98,8 @@ function IzexCleaningHero() {
       <CleaningCTA />
 
       <CleaningFooter />
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -46,7 +46,7 @@ function FurnitureFooter() {
         <div className="furniture-footer-divider" aria-hidden="true"></div>
 
         <div className="furniture-footer-bottom">
-          <p>{t('furnitureFooter.copyright')}</p>
+          <p>{t('furnitureFooter.copyright')} - {t('common.developedBy')}</p>
           <a href="#">{t('common.privacyPolicy')}</a>
         </div>
       </section>

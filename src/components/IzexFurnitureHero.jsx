@@ -5,7 +5,9 @@ import FurnitureServices from './FurnitureServices'
 import TargetAudienceAndProcess from './TargetAudienceAndProcess'
 import WhyChooseIzex from './WhyChooseIzex'
 import FurnitureFooter from './FurnitureFooter'
+import SEOConfig from './SEOConfig'
 import { useLanguage } from '../i18n/LanguageContext'
+import { generateLocalBusinessSchema } from '../config/seoConfig'
 
 function IzexFurnitureHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -13,7 +15,13 @@ function IzexFurnitureHero() {
   const highlights = Array.isArray(translatedHighlights) ? translatedHighlights : []
 
   return (
-    <div className="furniture-page">
+    <>
+      <SEOConfig
+        page="furniture"
+        language={language}
+        schemaData={generateLocalBusinessSchema('furniture-assembly')}
+      />
+      <div className="furniture-page">
       <header className="furniture-header" aria-label={t('furniturePage.headerAriaLabel')}>
         <Link className="furniture-brand" to="/furniture-assembly" aria-label={t('furniturePage.brandAriaLabel')}>
           <img
@@ -82,7 +90,8 @@ function IzexFurnitureHero() {
       <WhyChooseIzex />
       
       <FurnitureFooter />
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -58,7 +58,7 @@ function Footer() {
         <div className="footer-divider" aria-hidden="true"></div>
 
         <div className="footer-bottom">
-          <p>{t('globalFooter.copyright')}</p>
+          <p>{t('globalFooter.copyright')} - {t('common.developedBy')}</p>
           <a href="#">{t('common.privacyPolicy')}</a>
         </div>
       </section>

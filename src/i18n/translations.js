@@ -11,6 +11,7 @@ export const translations = {
       pt: 'PT',
       en: 'EN',
       projectImageAlt: 'Projeto de montagem de móveis',
+      developedBy: 'Desenvolvido por Prover Soluções em TI',
     },
     homePage: {
       menuAriaLabel: 'Abrir menu',
@@ -384,6 +385,7 @@ export const translations = {
       pt: 'PT',
       en: 'EN',
       projectImageAlt: 'Furniture assembly project',
+      developedBy: 'Developed by Prover Soluções em TI',
     },
     homePage: {
       menuAriaLabel: 'Open menu',
