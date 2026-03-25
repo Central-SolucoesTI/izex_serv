@@ -31,7 +31,7 @@ function IzexFurnitureHero() {
           <Link className="active" to="/furniture-assembly" aria-current="page">
             {t('common.furnitureAssembly')}
           </Link>
-          <a href="/#cleaning-solutions">{t('common.cleaningSolutions')}</a>
+          <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
           <a href="#contato">{t('common.contact')}</a>
         </nav>
 

@@ -4,6 +4,7 @@ import './App.css'
 import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
 import IzexFurnitureHero from './components/IzexFurnitureHero'
+import IzexCleaningHero from './components/IzexCleaningHero'
 import { useLanguage } from './i18n/LanguageContext'
 
 function HomePage() {
@@ -51,9 +52,9 @@ function HomePage() {
             <Link to="/furniture-assembly" onClick={closeMenu}>
               {t('common.furnitureAssembly')}
             </Link>
-            <a href="#cleaning-solutions" onClick={closeMenu}>
+            <Link to="/cleaning-solutions" onClick={closeMenu}>
               {t('common.cleaningSolutions')}
-            </a>
+            </Link>
             <a href="#contato" onClick={closeMenu}>
               {t('common.contact')}
             </a>
@@ -105,6 +106,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />
+      <Route path="/cleaning-solutions" element={<IzexCleaningHero />} />
     </Routes>
   )
 }

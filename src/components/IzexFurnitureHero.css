@@ -14,11 +14,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: var(--header-height);
+  height: var(--header-height);
   padding: 0 4vw;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(16, 30, 38, 0.08);
+  border-bottom: 1px solid rgba(216, 116, 46, 0.22);
+  box-sizing: border-box;
 }
 
 .furniture-brand {
@@ -29,8 +30,9 @@
 }
 
 .furniture-brand-logo {
-  width: 13.1rem;
-  height: auto;
+  height: calc(var(--header-height) - 20px);
+  width: auto;
+  max-width: 210px;
   display: block;
   object-fit: contain;
 }
@@ -39,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .furniture-header-controls {
@@ -53,11 +55,26 @@
   color: #1c2d37;
   font-size: 0.95rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .furniture-nav a.active {
   color: #d56d27;
   font-weight: 700;
+}
+
+.furniture-nav a:hover,
+.furniture-nav a:focus-visible {
+  color: #c86724;
+}
+
+.furniture-header .lang-switcher {
+  border-color: rgba(216, 116, 46, 0.35);
+}
+
+.furniture-header .lang-switcher button.active {
+  background: #d8742e;
+  color: #ffffff;
 }
 
 .furniture-hero {
@@ -162,7 +179,9 @@
   }
 
   .furniture-brand-logo {
-    width: 10.5rem;
+    height: calc(var(--header-height) - 16px);
+    width: auto;
+    max-width: 170px;
   }
 
   .furniture-overlay {

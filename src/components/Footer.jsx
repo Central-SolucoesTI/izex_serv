@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import { useLanguage } from '../i18n/LanguageContext'
 
@@ -48,8 +49,8 @@ function Footer() {
 
           <nav className="footer-nav" aria-label={t('globalFooter.navAriaLabel')}>
             <a href="#home">{t('common.home')}</a>
-            <a href="#furniture-assembly">{t('common.furnitureAssembly')}</a>
-            <a href="#cleaning-solutions">{t('common.cleaningSolutions')}</a>
+            <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
+            <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
             <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>

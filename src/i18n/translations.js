@@ -83,6 +83,22 @@ export const translations = {
       ],
       heroCta: 'Solicite um orçamento agora',
     },
+    cleaningPage: {
+      headerAriaLabel: 'Header IZEX Cleaning Solutions',
+      brandAriaLabel: 'IZEX Cleaning Solutions',
+      navAriaLabel: 'Navegação principal',
+      heroAriaLabel: 'Limpeza profissional para casa ou negócio',
+      heroTitle: 'Limpeza Profissional para Sua Casa ou Negócio',
+      heroSubtitle: 'Ambientes Sempre Limpos, Organizados e Aconchegantes!',
+      heroDescription:
+        'Procurando um serviço de limpeza confiável para sua casa, imóvel de temporada ou estabelecimento comercial? A Izex Cleaning Solutions cuida de cada detalhe para garantir um ambiente impecável, livre de sujeira e pronto para receber você ou seus clientes!',
+      highlights: [
+        'Equipe profissional e treinada',
+        'Atendimento rápido e agendado',
+        'Serviço em toda a região de Orlando',
+      ],
+      heroCta: 'Agende agora sua limpeza',
+    },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
       label: 'Furniture Assembly',
@@ -268,6 +284,22 @@ export const translations = {
         'Need furniture assembled or installed at your home or business? Izex Furniture Assembly offers reliable and efficient service to ensure your furniture is assembled with quality and safety.',
       highlights: ['Qualified professionals', 'Fast scheduled service', 'Service across the entire region'],
       heroCta: 'Request an estimate now',
+    },
+    cleaningPage: {
+      headerAriaLabel: 'IZEX Cleaning Solutions header',
+      brandAriaLabel: 'IZEX Cleaning Solutions',
+      navAriaLabel: 'Main navigation',
+      heroAriaLabel: 'Professional cleaning for home or business',
+      heroTitle: 'Professional Cleaning for Your Home or Business',
+      heroSubtitle: 'Spaces Always Clean, Organized, and Welcoming!',
+      heroDescription:
+        'Looking for a reliable cleaning service for your home, vacation rental, or commercial property? Izex Cleaning Solutions handles every detail to ensure a spotless environment, free of dirt and ready to welcome you or your clients!',
+      highlights: [
+        'Professional and trained team',
+        'Fast scheduled service',
+        'Service across the Orlando region',
+      ],
+      heroCta: 'Schedule your cleaning now',
     },
     furnitureServices: {
       ariaLabel: 'Our furniture assembly services',

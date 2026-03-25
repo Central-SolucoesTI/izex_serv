@@ -38,7 +38,7 @@ function FurnitureFooter() {
           <nav className="furniture-footer-nav" aria-label={t('furnitureFooter.navAriaLabel')}>
             <Link to="/">{t('common.home')}</Link>
             <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
-            <a href="/#cleaning-solutions">{t('common.cleaningSolutions')}</a>
+            <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
             <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>
