@@ -7,6 +7,7 @@ import IzexFurnitureHero from './components/IzexFurnitureHero'
 import IzexCleaningHero from './components/IzexCleaningHero'
 import ContactAndSteps from './components/ContactAndSteps'
 import ServiceRegionsArea from './components/ServiceRegionsArea'
+import FloatingButtons from './components/FloatingButtons'
 import { useLanguage } from './i18n/LanguageContext'
 
 function HomePage() {
@@ -107,11 +108,14 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />
-      <Route path="/cleaning-solutions" element={<IzexCleaningHero />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />
+        <Route path="/cleaning-solutions" element={<IzexCleaningHero />} />
+      </Routes>
+      <FloatingButtons />
+    </>
   )
 }
 

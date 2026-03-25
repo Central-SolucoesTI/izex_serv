@@ -18,7 +18,32 @@
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(23, 32, 40, 0.08);
+  border-bottom: 0;
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d8742e 0%, #e08d45 38%, #2f6ea2 100%);
+  background-size: 220% 220%;
+  animation: header-gradient-flow 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes header-gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .brand {

@@ -1,0 +1,95 @@
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+}
+
+.floating-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-btn:hover {
+  width: 150px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25d366 0%, #1fa952 100%);
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: linear-gradient(135deg, #1fa952 0%, #17a336 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.sms-btn {
+  background: linear-gradient(135deg, #d8742e 0%, #b8591f 100%);
+  color: white;
+}
+
+.sms-btn:hover {
+  background: linear-gradient(135deg, #b8591f 0%, #98460f 100%);
+  box-shadow: 0 6px 20px rgba(216, 116, 46, 0.4);
+}
+
+.floating-btn svg {
+  flex-shrink: 0;
+  margin-right: 0;
+}
+
+.floating-btn:hover svg {
+  margin-right: 8px;
+}
+
+.btn-label {
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+}
+
+.floating-btn:hover .btn-label {
+  opacity: 1;
+}
+
+/* Mobile responsivo */
+@media (max-width: 640px) {
+  .floating-buttons {
+    right: 12px;
+    bottom: 20px;
+    gap: 12px;
+  }
+
+  .floating-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-btn:hover {
+    width: 48px;
+    font-size: 0;
+  }
+
+  .btn-label {
+    display: none;
+  }
+}

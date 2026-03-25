@@ -361,6 +361,16 @@ export const translations = {
       phone: '(978) 727-7471',
       copyright: '© 2025 Izex. Todos os direitos reservados.',
     },
+    floatingButtons: {
+      ariaLabel: 'Botoes flutuantes de contato',
+      whatsappLabel: 'WhatsApp',
+      whatsappTitle: 'Envie uma mensagem via WhatsApp',
+      whatsappAriaLabel: 'Abrir WhatsApp para enviar mensagem',
+      whatsappMessage: 'Ola! Gostaria de solicitar um orcamento.',
+      smsLabel: 'Chamar',
+      smsTitle: 'Ligar ou enviar SMS',
+      smsAriaLabel: 'Abrir discador para ligar ou enviar SMS',
+    },
   },
   en: {
     common: {
@@ -718,6 +728,16 @@ export const translations = {
       address: '10200 Falcon Moss Ln Orlando FL 32832',
       phone: '(978) 727-7471',
       copyright: '© 2025 Izex. All rights reserved.',
+    },
+    floatingButtons: {
+      ariaLabel: 'Floating contact buttons',
+      whatsappLabel: 'WhatsApp',
+      whatsappTitle: 'Send a message via WhatsApp',
+      whatsappAriaLabel: 'Open WhatsApp to send a message',
+      whatsappMessage: 'Hi! I would like to request a quote.',
+      smsLabel: 'Call',
+      smsTitle: 'Call or send SMS',
+      smsAriaLabel: 'Open dialer to call or send SMS',
     },
   },
 }

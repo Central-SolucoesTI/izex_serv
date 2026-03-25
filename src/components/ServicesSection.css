@@ -13,8 +13,9 @@
   height: 280px;
   background-image: url('/images/bg_for_for.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.12;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
   pointer-events: none;
 }
 
