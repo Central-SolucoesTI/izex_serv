@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
 import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
+import IzexFurnitureHero from './components/IzexFurnitureHero'
 
-function App() {
+function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const closeMenu = () => setIsMenuOpen(false)
@@ -42,9 +44,9 @@ function App() {
           <a href="#home" onClick={closeMenu}>
             Home
           </a>
-          <a href="#furniture-assembly" onClick={closeMenu}>
+          <Link to="/furniture-assembly" onClick={closeMenu}>
             Furniture Assembly
-          </a>
+          </Link>
           <a href="#cleaning-solutions" onClick={closeMenu}>
             Cleaning Solutions
           </a>
@@ -78,6 +80,15 @@ function App() {
       <ServicesSection />
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />
+    </Routes>
   )
 }
 
