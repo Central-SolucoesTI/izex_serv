@@ -104,6 +104,9 @@
 
 .furniture-hero {
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  box-sizing: border-box;
   padding-top: var(--header-height);
   background-image: url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
@@ -111,7 +114,8 @@
 }
 
 .furniture-overlay {
-  min-height: calc(100vh - var(--header-height));
+  min-height: 100%;
+  height: 100%;
   width: 100%;
   background: linear-gradient(
     90deg,
@@ -211,7 +215,7 @@
 
   .furniture-overlay {
     width: 100%;
-    min-height: calc(100vh - var(--header-height));
+    min-height: 100%;
     background: linear-gradient(180deg, rgba(224, 114, 42, 0.82) 0%, rgba(224, 114, 42, 0.7) 100%);
   }
 
