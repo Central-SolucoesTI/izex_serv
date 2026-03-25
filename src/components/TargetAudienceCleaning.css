@@ -1,0 +1,146 @@
+.target-audience-cleaning {
+  background: #ffffff;
+  padding: 4.5rem 1.25rem;
+}
+
+.target-audience-cleaning-inner {
+  width: min(1180px, 94vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(360px, 1fr);
+  gap: 4.25rem;
+  align-items: center;
+}
+
+.target-audience-cleaning-media {
+  position: relative;
+  min-height: 420px;
+}
+
+.target-audience-cleaning-image {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+  border-radius: 1.1rem;
+  box-shadow: 0 22px 48px rgba(12, 32, 54, 0.16);
+}
+
+.target-audience-cleaning-image-primary {
+  top: 0;
+  left: 0;
+  width: min(100%, 430px);
+  height: 314px;
+}
+
+.target-audience-cleaning-image-secondary {
+  right: 0;
+  bottom: 0;
+  width: min(52%, 225px);
+  height: 190px;
+}
+
+.target-audience-cleaning-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.target-audience-cleaning-label {
+  margin: 0;
+  color: #1b6ecf;
+  text-transform: none;
+  font-size: 0.96rem;
+  line-height: 1.2;
+}
+
+.target-audience-cleaning-title {
+  margin: 0.45rem 0 0;
+  color: #101318;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.12;
+  font-weight: 800;
+}
+
+.target-audience-cleaning-list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.45rem;
+}
+
+.target-audience-cleaning-item {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.target-audience-cleaning-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #103e6f;
+}
+
+.target-audience-cleaning-copy h3 {
+  margin: 0;
+  color: #182028;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.target-audience-cleaning-copy p {
+  margin: 0.55rem 0 0;
+  color: #232e39;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 980px) {
+  .target-audience-cleaning-inner {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .target-audience-cleaning-media {
+    min-height: 380px;
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .target-audience-cleaning {
+    padding: 3rem 0.85rem;
+  }
+
+  .target-audience-cleaning-media {
+    min-height: 320px;
+  }
+
+  .target-audience-cleaning-image-primary {
+    width: min(100%, 340px);
+    height: 230px;
+  }
+
+  .target-audience-cleaning-image-secondary {
+    width: min(58%, 170px);
+    height: 138px;
+  }
+
+  .target-audience-cleaning-title {
+    font-size: 1.8rem;
+  }
+
+  .target-audience-cleaning-item {
+    grid-template-columns: 2.65rem 1fr;
+    gap: 0.8rem;
+  }
+
+  .target-audience-cleaning-icon {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+}

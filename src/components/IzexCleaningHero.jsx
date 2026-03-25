@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './IzexCleaningHero.css'
 import { useLanguage } from '../i18n/LanguageContext'
 import CleaningServices from './CleaningServices'
+import TargetAudienceCleaning from './TargetAudienceCleaning'
 
 function IzexCleaningHero() {
   const { language, setLanguage, t } = useLanguage()
@@ -75,6 +76,8 @@ function IzexCleaningHero() {
       </section>
 
       <CleaningServices />
+
+      <TargetAudienceCleaning />
     </div>
   )
 }

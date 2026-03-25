@@ -125,6 +125,28 @@ export const translations = {
         },
       ],
     },
+    targetAudienceCleaning: {
+      ariaLabel: 'Para quem é o serviço de limpeza',
+      primaryImageAlt: 'Profissional de limpeza em uma cozinha',
+      secondaryImageAlt: 'Toalhas limpas dobradas em uma prateleira',
+      label: 'Cleaning Solutions',
+      title: 'Para quem é o nosso serviço?',
+      items: [
+        {
+          title: 'Proprietários de residências',
+          description: 'Manter sua casa limpa ficou fácil e sem preocupação!',
+        },
+        {
+          title: 'Empresas e comércios',
+          description:
+            'Ambientes de trabalho limpos aumentam a produtividade e deixam uma ótima impressão.',
+        },
+        {
+          title: 'Proprietários de Airbnb e imóveis de temporada',
+          description: 'Deixe seu imóvel impecável entre uma estadia e outra.',
+        },
+      ],
+    },
     furnitureServices: {
       ariaLabel: 'Nossos serviços de furniture assembly',
       label: 'Furniture Assembly',
@@ -350,6 +372,28 @@ export const translations = {
         {
           title: 'Customized Services',
           description: 'We adapt the service to your specific needs!',
+        },
+      ],
+    },
+    targetAudienceCleaning: {
+      ariaLabel: 'Who the cleaning service is for',
+      primaryImageAlt: 'Cleaning professional in a kitchen',
+      secondaryImageAlt: 'Folded clean towels on a shelf',
+      label: 'Cleaning Solutions',
+      title: 'Who is our service for?',
+      items: [
+        {
+          title: 'Homeowners',
+          description: 'Keeping your home clean became easy and worry-free!',
+        },
+        {
+          title: 'Businesses and shops',
+          description:
+            'Clean work environments increase productivity and leave a great impression.',
+        },
+        {
+          title: 'Airbnb hosts and vacation property owners',
+          description: 'Keep your property spotless between one stay and the next.',
         },
       ],
     },
