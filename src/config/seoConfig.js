@@ -78,6 +78,15 @@ export const SEO_PAGES = {
     ogType: 'website',
     ogImage: 'https://izexservices.com/images/og-cleaning.png',
   },
+  'privacy-policy': {
+    title: 'Política de Privacidade | Izex Services LLC',
+    description:
+      'Política de privacidade e proteção de dados da Izex Services LLC. Conheça como coletamos, usamos e protegemos suas informações.',
+    canonical: 'https://izexservices.com/privacy-policy',
+    keywords: 'política de privacidade, proteção de dados, GDPR, CCPA, LGPD',
+    ogType: 'website',
+    ogImage: 'https://izexservices.com/images/og-privacy.png',
+  },
 }
 
 // JSON-LD Schema Builders

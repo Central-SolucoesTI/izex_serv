@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
+import SEOConfig from './SEOConfig'
 import './PrivacyPolicy.css'
 
 export default function PrivacyPolicy() {
-  const { t, language } = useLanguage()
+  const { t, language, setLanguage } = useLanguage()
 
   return (
-    <div className="privacy-policy-page">
-      <header className="privacy-header">
-        <Link to="/" className="privacy-brand">
+    <>
+      <SEOConfig page="privacy-policy" language={language} />
+      <div className="privacy-policy-page">
+      <header className="privacy-header" aria-label={t('homePage.navAriaLabel')}>
+        <Link to="/" className="privacy-brand" aria-label="IZEX Services LLC">
           <img
             src="/images/izex_logo.png"
             alt="Logo IZEX Services LLC"
@@ -16,11 +19,34 @@ export default function PrivacyPolicy() {
             height="82"
           />
         </Link>
-        <nav className="privacy-nav">
-          <Link to="/">{t('common.home')}</Link>
-          <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
-          <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
-        </nav>
+
+        <div className="privacy-header-controls">
+          <nav className="privacy-nav" aria-label={t('homePage.navAriaLabel')}>
+            <Link to="/">{t('common.home')}</Link>
+            <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
+            <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
+            <Link className="active" to="/privacy-policy" aria-current="page">
+              {t('common.privacyPolicy')}
+            </Link>
+          </nav>
+
+          <div className="lang-switcher" aria-label={t('common.languageLabel')}>
+            <button
+              type="button"
+              className={language === 'pt' ? 'active' : ''}
+              onClick={() => setLanguage('pt')}
+            >
+              {t('common.pt')}
+            </button>
+            <button
+              type="button"
+              className={language === 'en' ? 'active' : ''}
+              onClick={() => setLanguage('en')}
+            >
+              {t('common.en')}
+            </button>
+          </div>
+        </div>
       </header>
 
       <main className="privacy-content">
@@ -165,6 +191,7 @@ export default function PrivacyPolicy() {
       <footer className="privacy-footer">
         <p>© 2025 Izex Services LLC. {t('common.developedBy')}</p>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }

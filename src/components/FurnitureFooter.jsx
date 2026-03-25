@@ -39,6 +39,7 @@ function FurnitureFooter() {
             <Link to="/">{t('common.home')}</Link>
             <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
             <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
+            <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
             <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>
@@ -47,7 +48,7 @@ function FurnitureFooter() {
 
         <div className="furniture-footer-bottom">
           <p>{t('furnitureFooter.copyright')} - {t('common.developedBy')}</p>
-          <a href="#">{t('common.privacyPolicy')}</a>
+          <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>
     </footer>

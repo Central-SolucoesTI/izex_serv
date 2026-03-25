@@ -5,6 +5,7 @@ import ServicesSection from './components/ServicesSection'
 import Footer from './components/Footer'
 import IzexFurnitureHero from './components/IzexFurnitureHero'
 import IzexCleaningHero from './components/IzexCleaningHero'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import ContactAndSteps from './components/ContactAndSteps'
 import ServiceRegionsArea from './components/ServiceRegionsArea'
 import FloatingButtons from './components/FloatingButtons'
@@ -123,6 +124,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/furniture-assembly" element={<IzexFurnitureHero />} />
         <Route path="/cleaning-solutions" element={<IzexCleaningHero />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <FloatingButtons />
       <CookieConsent />

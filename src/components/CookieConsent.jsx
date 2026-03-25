@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { X, Settings } from 'lucide-react'
 import { useLanguage } from '../i18n/LanguageContext'
 import './CookieConsent.css'
@@ -241,7 +242,7 @@ export default function CookieConsent() {
 
         <p className="cookie-policy">
           {t('cookieConsent.policyText')}{' '}
-          <a href="#">{t('cookieConsent.privacyPolicy')}</a>
+          <Link to="/privacy-policy">{t('cookieConsent.privacyPolicy')}</Link>
         </p>
       </div>
     </div>

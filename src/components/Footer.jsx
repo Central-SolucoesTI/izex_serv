@@ -51,6 +51,7 @@ function Footer() {
             <a href="#home">{t('common.home')}</a>
             <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
             <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
+            <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
             <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>
@@ -59,7 +60,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>{t('globalFooter.copyright')} - {t('common.developedBy')}</p>
-          <a href="#">{t('common.privacyPolicy')}</a>
+          <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>
     </footer>

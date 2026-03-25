@@ -37,6 +37,7 @@ function CleaningFooter() {
             <Link to="/">{t('common.home')}</Link>
             <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
             <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
+            <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
             <a href="#contato">{t('common.contact')}</a>
           </nav>
         </div>
@@ -45,7 +46,7 @@ function CleaningFooter() {
 
         <div className="cleaning-footer-bottom">
           <p>{t('cleaningFooter.copyright')} - {t('common.developedBy')}</p>
-          <a href="#">{t('common.privacyPolicy')}</a>
+          <Link to="/privacy-policy">{t('common.privacyPolicy')}</Link>
         </div>
       </section>
     </footer>
