@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Check } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import './IzexCleaningHero.css'
@@ -12,9 +13,11 @@ import SEOConfig from './SEOConfig'
 import { generateLocalBusinessSchema } from '../config/seoConfig'
 
 function IzexCleaningHero() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
   const translatedHighlights = t('cleaningPage.highlights', [])
   const highlights = Array.isArray(translatedHighlights) ? translatedHighlights : []
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <>
@@ -35,14 +38,31 @@ function IzexCleaningHero() {
           />
         </Link>
 
+        <button
+          className="cleaning-menu-toggle"
+          type="button"
+          aria-expanded={isMenuOpen}
+          aria-controls="cleaning-navigation"
+          aria-label={t('homePage.menuAriaLabel')}
+          onClick={() => setIsMenuOpen((current) => !current)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div className="cleaning-header-controls">
-          <nav className="cleaning-nav" aria-label={t('cleaningPage.navAriaLabel')}>
-            <Link to="/">{t('common.home')}</Link>
-            <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
-            <Link className="active" to="/cleaning-solutions" aria-current="page">
+          <nav
+            id="cleaning-navigation"
+            className={`cleaning-nav ${isMenuOpen ? 'open' : ''}`}
+            aria-label={t('cleaningPage.navAriaLabel')}
+          >
+            <Link to="/" onClick={closeMenu}>{t('common.home')}</Link>
+            <Link to="/furniture-assembly" onClick={closeMenu}>{t('common.furnitureAssembly')}</Link>
+            <Link className="active" to="/cleaning-solutions" aria-current="page" onClick={closeMenu}>
               {t('common.cleaningSolutions')}
             </Link>
-            <a href="#contato">{t('common.contact')}</a>
+            <a href="#contato" onClick={closeMenu}>{t('common.contact')}</a>
           </nav>
 
           <div className="lang-switcher" aria-label={t('common.languageLabel')}>

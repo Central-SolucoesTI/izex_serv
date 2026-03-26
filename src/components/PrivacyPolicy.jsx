@@ -1,10 +1,13 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
 import SEOConfig from './SEOConfig'
 import './PrivacyPolicy.css'
 
 export default function PrivacyPolicy() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { t, language, setLanguage } = useLanguage()
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <>
@@ -20,12 +23,29 @@ export default function PrivacyPolicy() {
           />
         </Link>
 
+        <button
+          className="privacy-menu-toggle"
+          type="button"
+          aria-expanded={isMenuOpen}
+          aria-controls="privacy-navigation"
+          aria-label={t('homePage.menuAriaLabel')}
+          onClick={() => setIsMenuOpen((current) => !current)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div className="privacy-header-controls">
-          <nav className="privacy-nav" aria-label={t('homePage.navAriaLabel')}>
-            <Link to="/">{t('common.home')}</Link>
-            <Link to="/furniture-assembly">{t('common.furnitureAssembly')}</Link>
-            <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
-            <Link className="active" to="/privacy-policy" aria-current="page">
+          <nav
+            id="privacy-navigation"
+            className={`privacy-nav ${isMenuOpen ? 'open' : ''}`}
+            aria-label={t('homePage.navAriaLabel')}
+          >
+            <Link to="/" onClick={closeMenu}>{t('common.home')}</Link>
+            <Link to="/furniture-assembly" onClick={closeMenu}>{t('common.furnitureAssembly')}</Link>
+            <Link to="/cleaning-solutions" onClick={closeMenu}>{t('common.cleaningSolutions')}</Link>
+            <Link className="active" to="/privacy-policy" aria-current="page" onClick={closeMenu}>
               {t('common.privacyPolicy')}
             </Link>
           </nav>

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Check } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import './IzexFurnitureHero.css'
@@ -10,9 +11,11 @@ import { useLanguage } from '../i18n/LanguageContext'
 import { generateLocalBusinessSchema } from '../config/seoConfig'
 
 function IzexFurnitureHero() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
   const translatedHighlights = t('furniturePage.highlights', [])
   const highlights = Array.isArray(translatedHighlights) ? translatedHighlights : []
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <>
@@ -33,14 +36,31 @@ function IzexFurnitureHero() {
           />
         </Link>
 
+        <button
+          className="furniture-menu-toggle"
+          type="button"
+          aria-expanded={isMenuOpen}
+          aria-controls="furniture-navigation"
+          aria-label={t('homePage.menuAriaLabel')}
+          onClick={() => setIsMenuOpen((current) => !current)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <div className="furniture-header-controls">
-        <nav className="furniture-nav" aria-label={t('furniturePage.navAriaLabel')}>
-          <Link to="/">{t('common.home')}</Link>
-          <Link className="active" to="/furniture-assembly" aria-current="page">
+        <nav
+          id="furniture-navigation"
+          className={`furniture-nav ${isMenuOpen ? 'open' : ''}`}
+          aria-label={t('furniturePage.navAriaLabel')}
+        >
+          <Link to="/" onClick={closeMenu}>{t('common.home')}</Link>
+          <Link className="active" to="/furniture-assembly" aria-current="page" onClick={closeMenu}>
             {t('common.furnitureAssembly')}
           </Link>
-          <Link to="/cleaning-solutions">{t('common.cleaningSolutions')}</Link>
-          <a href="#contato">{t('common.contact')}</a>
+          <Link to="/cleaning-solutions" onClick={closeMenu}>{t('common.cleaningSolutions')}</Link>
+          <a href="#contato" onClick={closeMenu}>{t('common.contact')}</a>
         </nav>
 
         <div className="lang-switcher" aria-label={t('common.languageLabel')}>
