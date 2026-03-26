@@ -76,6 +76,8 @@
   display: grid;
   gap: 0.75rem;
   overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 460px;
 }
 
 .furniture-gallery-row {
@@ -157,8 +159,21 @@
     justify-self: stretch;
   }
 
+  .furniture-gallery {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .furniture-gallery-row {
+    width: max-content;
+    animation: none;
+  }
+
   .furniture-gallery-item {
     flex-basis: 180px;
+    scroll-snap-align: start;
   }
 
   .furniture-gallery-item img {

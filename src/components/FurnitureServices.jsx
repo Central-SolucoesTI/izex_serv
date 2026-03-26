@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './FurnitureServices.css'
 import { useLanguage } from '../i18n/LanguageContext'
 
@@ -22,6 +23,18 @@ const galleryImageSources = [
 
 function FurnitureServices() {
   const { t } = useLanguage()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const handleChange = (event) => setIsMobile(event.matches)
+
+    setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', handleChange)
+
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
+
   const translatedCards = t('furnitureServices.serviceCards', [])
   const serviceCards = Array.isArray(translatedCards)
     ? translatedCards.map((card, index) => ({
@@ -36,6 +49,8 @@ function FurnitureServices() {
   }))
   const topRowImages = galleryImages.slice(0, Math.ceil(galleryImages.length / 2))
   const bottomRowImages = galleryImages.slice(Math.ceil(galleryImages.length / 2))
+  const topTrackImages = isMobile ? topRowImages : [...topRowImages, ...topRowImages]
+  const bottomTrackImages = [...bottomRowImages, ...bottomRowImages]
 
   return (
     <section className="furniture-services" aria-label={t('furnitureServices.ariaLabel')}>
@@ -51,27 +66,27 @@ function FurnitureServices() {
                 <p>{card.description}</p>
                 <small>{card.footer}</small>
               </div>
-              <img src={card.image} alt={card.title} loading="lazy" />
+              <img src={card.image} alt={card.title} loading="lazy" decoding="async" width="150" height="150" />
             </article>
           ))}
         </div>
 
         <div className="furniture-gallery" aria-label={t('furnitureServices.galleryAriaLabel')}>
           <div className="furniture-gallery-row row-left">
-            {[...topRowImages, ...topRowImages].map((image, index) => (
+            {topTrackImages.map((image, index) => (
               <figure key={`${image.src}-top-${index}`} className="furniture-gallery-item">
-                <img src={image.src} alt={image.alt} loading="lazy" />
+                <img src={image.src} alt={image.alt} loading="lazy" decoding="async" fetchPriority="low" width="260" height="220" />
               </figure>
             ))}
           </div>
 
-          <div className="furniture-gallery-row row-right">
-            {[...bottomRowImages, ...bottomRowImages].map((image, index) => (
+          {!isMobile && <div className="furniture-gallery-row row-right">
+            {bottomTrackImages.map((image, index) => (
               <figure key={`${image.src}-bottom-${index}`} className="furniture-gallery-item">
-                <img src={image.src} alt={image.alt} loading="lazy" />
+                <img src={image.src} alt={image.alt} loading="lazy" decoding="async" fetchPriority="low" width="260" height="220" />
               </figure>
             ))}
-          </div>
+          </div>}
         </div>
       </div>
     </section>
