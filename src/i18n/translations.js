@@ -29,7 +29,7 @@ export const translations = {
       contactTitle: 'Entre em contato conosco',
       contactDescription:
         'Tem alguma dúvida ou quer solicitar um orçamento? Nossa equipe está pronta para te atender!',
-      channels: ['(978) 833-5051', 'WhatsApp', 'info@izexservices.com'],
+      channels: ['+1 (508) 215-4456', 'WhatsApp', 'info@izexservices.com'],
       stepsTitle: 'Próximos passos',
       steps: [
         {
@@ -57,7 +57,7 @@ export const translations = {
       description:
         'Atendemos diversas cidades e regiões próximas de Orlando e Central Flórida, garantindo um serviço ágil e eficiente.',
       instruction: 'Entre em contato para verificar a disponibilidade na sua localidade.',
-      cities: ['Orlando', 'Clearwont', 'Kissimmee', 'Entre outras'],
+      cities: [],
     },
     servicesSection: {
       ariaLabel: 'Sub-empresas da IZEX Services LLC',
@@ -84,7 +84,7 @@ export const translations = {
           brand: 'Izex Cleaning Solutions',
           title: 'Izex Cleaning Solutions: cuidando do seu espaço',
           description:
-            'Além da excelência na montagem de móveis, a Izex Services LLC também conta com a Izex Cleaning Solutions, oferecendo serviços de limpeza profissional e conservação para ambientes residenciais e comerciais. Com profissionais treinados e produtos de qualidade, garantimos um serviço eficiente para deixar seu espaço mais limpo e bem cuidado.',
+            'A Izex Cleaning Solutions oferece serviços de limpeza profissional e conservação para ambientes residenciais e comerciais. Com profissionais treinados e produtos de qualidade, garantimos um serviço eficiente para deixar seu espaço mais limpo e bem cuidado.',
           items: [],
         },
       ],
@@ -97,9 +97,9 @@ export const translations = {
         'Precisa de um serviço rápido e eficiente? Fale com a nossa equipe e solicite um orçamento sem compromisso!',
       infoAriaLabel: 'Informações do rodapé',
       addressTitle: 'Endereço',
-      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      addressValue: '2691 Nottel dr Saint Cloud Fl 34772',
       contactTitle: 'Contato',
-      contactValue: '(978) 727-7471',
+      contactValue: '+1 (508) 215-4456',
       socialAriaLabel: 'Redes sociais',
       navAriaLabel: 'Links de navegação',
       copyright: '© 2026 Izex. Todos os direitos reservados.',
@@ -252,9 +252,9 @@ export const translations = {
       navAriaLabel: 'Links de navegação',
       brand: 'IZEX SERVICES LLC',
       addressTitle: 'Endereço',
-      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      addressValue: '2691 Nottel dr Saint Cloud Fl 34772',
       contactTitle: 'Contato',
-      contactValue: '(978) 727-7471',
+      contactValue: '+1 (508) 215-4456',
       copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     furnitureServices: {
@@ -358,8 +358,8 @@ export const translations = {
       socialAriaLabel: 'Redes sociais',
       navAriaLabel: 'Links de navegacao',
       brand: 'IZEX SERVICES LLC',
-      address: '10200 Falcon Moss Ln Orlando FL 32832',
-      phone: '(978) 727-7471',
+      address: '2691 Nottel dr Saint Cloud Fl 34772',
+      phone: '+1 (508) 215-4456',
       copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     floatingButtons: {
@@ -460,7 +460,7 @@ export const translations = {
       changesText: 'Podemos atualizar esta Política de Privacidade de tempos em tempos para refletir mudanças em nossas práticas. Notificaremos você sobre mudanças significativas publicando a política atualizada em nosso Site com uma data de "Última atualização" revisada.',
       contact: 'Contato',
       contactIntro: 'Se você tiver dúvidas sobre esta Política de Privacidade ou sobre nossas práticas de privacidade, entre em contato conosco em:',
-      address: '10200 Falcon Moss Ln, Orlando, FL 32832, USA',
+      address: '2691 Nottel dr Saint Cloud Fl 34772',
       phone: 'Telefone',
       email: 'E-mail',
     },
@@ -495,7 +495,7 @@ export const translations = {
       contactTitle: 'Get in touch with us',
       contactDescription:
         'Have any questions or want to request a quote? Our team is ready to help you!',
-      channels: ['(978) 833-5051', 'WhatsApp', 'info@izexservices.com'],
+      channels: ['+1 (508) 215-4456', 'WhatsApp', 'info@izexservices.com'],
       stepsTitle: 'Next steps',
       steps: [
         {
@@ -523,7 +523,7 @@ export const translations = {
       description:
         'We serve multiple cities and areas near Orlando and Central Florida, ensuring fast and efficient service.',
       instruction: 'Get in touch to check availability in your area.',
-      cities: ['Orlando', 'Clearwont', 'Kissimmee', 'And more'],
+      cities: [],
     },
     servicesSection: {
       ariaLabel: 'IZEX Services LLC sub-brands',
@@ -563,9 +563,9 @@ export const translations = {
         'Need fast and efficient service? Talk to our team and request a free estimate!',
       infoAriaLabel: 'Footer information',
       addressTitle: 'Address',
-      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      addressValue: '2691 Nottel dr Saint Cloud Fl 34772',
       contactTitle: 'Contact',
-      contactValue: '(978) 727-7471',
+      contactValue: '+1 (508) 215-4456',
       socialAriaLabel: 'Social media',
       navAriaLabel: 'Navigation links',
       copyright: '© 2026 Izex. All rights reserved.',
@@ -714,9 +714,9 @@ export const translations = {
       navAriaLabel: 'Navigation links',
       brand: 'IZEX SERVICES LLC',
       addressTitle: 'Address',
-      addressValue: '10200 Falcon Moss Ln Orlando FL 32832',
+      addressValue: '2691 Nottel dr Saint Cloud Fl 34772',
       contactTitle: 'Contact',
-      contactValue: '(978) 727-7471',
+      contactValue: '+1 (508) 215-4456',
       copyright: '© 2026 Izex. All rights reserved.',
     },
     furnitureServices: {
@@ -819,8 +819,8 @@ export const translations = {
       socialAriaLabel: 'Social media',
       navAriaLabel: 'Navigation links',
       brand: 'IZEX SERVICES LLC',
-      address: '10200 Falcon Moss Ln Orlando FL 32832',
-      phone: '(978) 727-7471',
+      address: '2691 Nottel dr Saint Cloud Fl 34772',
+      phone: '+1 (508) 215-4456',
       copyright: '© 2026 Izex. All rights reserved.',
     },
     floatingButtons: {
@@ -921,7 +921,7 @@ export const translations = {
       changesText: 'We may update this Privacy Policy from time to time to reflect changes in our practices. We will notify you of significant changes by posting the updated policy on our Site with a revised "Last Updated" date.',
       contact: 'Contact',
       contactIntro: 'If you have questions about this Privacy Policy or our privacy practices, please contact us at:',
-      address: '10200 Falcon Moss Ln, Orlando, FL 32832, USA',
+      address: '2691 Nottel dr Saint Cloud Fl 34772',
       phone: 'Phone',
       email: 'Email',
     },
