@@ -13,7 +13,7 @@ function FurnitureFooter() {
         <div className="furniture-footer-cta-box">
           <h2>{t('furnitureFooter.ctaTitle')}</h2>
           <p>{t('furnitureFooter.ctaSubtitle')}</p>
-          <a href="https://wa.me/19787277471" target="_blank" rel="noreferrer">
+          <a href="https://wa.me/15082154456" target="_blank" rel="noreferrer">
             {t('common.whatsappCta')}
           </a>
         </div>

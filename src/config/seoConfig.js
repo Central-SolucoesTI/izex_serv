@@ -7,16 +7,16 @@ export const SITE_CONFIG = {
   socialProfiles: {
     facebook: 'https://www.facebook.com/izexservices',
     instagram: 'https://www.instagram.com/izexservices',
-    whatsapp: 'https://wa.me/9787277471',
+    whatsapp: 'https://wa.me/15082154456',
   },
   contact: {
-    phone: '(978) 727-7471',
-    phoneClean: '9787277471',
+    phone: '+1 (508) 215-4456',
+    phoneClean: '15082154456',
     email: 'info@izexservices.com',
-    address: '10200 Falcon Moss Ln, Orlando, FL 32832',
-    city: 'Orlando',
+    address: '2691 Nottel dr Saint Cloud Fl 34772',
+    city: 'Saint Cloud',
     state: 'FL',
-    zipCode: '32832',
+    zipCode: '34772',
     country: 'US',
   },
   business: {
