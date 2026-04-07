@@ -10,7 +10,7 @@ function CleaningCTA() {
         <div className="cleaning-cta-content">
           <h2>{t('cleaningCTA.title')}</h2>
           <p>{t('cleaningCTA.subtitle')}</p>
-          <a className="cleaning-cta-button" href="https://wa.me/15082154456" target="_blank" rel="noreferrer">
+          <a className="cleaning-cta-button" href="https://wa.me/19788335051" target="_blank" rel="noreferrer">
             {t('cleaningCTA.button')}
           </a>
         </div>

@@ -200,7 +200,7 @@ export default function PrivacyPolicy() {
               <p>
                 <strong>Izex Services LLC</strong><br />
                 {t('privacyPolicy.address')}<br />
-                {t('privacyPolicy.phone')}: <a href="tel:+15082154456">+1 (508) 215-4456</a><br />
+                {t('privacyPolicy.phone')}: <a href="tel:+19788335051">978 833 5051</a><br />
                 {t('privacyPolicy.email')}: <a href="mailto:info@izexservices.com">info@izexservices.com</a>
               </p>
             </div>

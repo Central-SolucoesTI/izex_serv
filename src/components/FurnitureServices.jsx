@@ -2,24 +2,49 @@ import { useEffect, useState } from 'react'
 import './FurnitureServices.css'
 import { useLanguage } from '../i18n/LanguageContext'
 
-const cardImages = ['/images/port (19).png', '/images/port (3).png']
+const portfolioBasePath = '/images/port'
 
-const galleryImageSources = [
-  '/images/port_.png',
-  '/images/port.png',
-  '/images/port (2).png',
-  '/images/port (3).png',
-  '/images/port (5).png',
-  '/images/port (9).png',
-  '/images/port (10).png',
-  '/images/port (17).png',
-  '/images/port (19).png',
-  '/images/port (20).png',
-  '/images/port (26).png',
-  '/images/port (27).png',
-  '/images/port (29).png',
-  '/images/port (43).png',
+const portfolioImageNames = [
+  '10.png',
+  '22.png',
+  '23.png',
+  '24.png',
+  '25.png',
+  '26.png',
+  '27.png',
+  '28.png',
+  '29.png',
+  '30.png',
+  '31.png',
+  '32.png',
+  'port.png',
+  'port (2).png',
+  'port (3).png',
+  'port (4).png',
+  'port (5).png',
+  'port (6).png',
+  'port (7).png',
+  'port (8).png',
+  'port (9).png',
+  'port (10).png',
+  'port (11).png',
+  'port (12).png',
+  'port (13).png',
+  'port (14).png',
+  'port (15).png',
+  'port (16).png',
+  'port (17).png',
+  'port (18).png',
+  'port (19).png',
+  'port (20).png',
 ]
+
+const cardImages = [
+  `${portfolioBasePath}/port (19).png`,
+  `${portfolioBasePath}/port (3).png`,
+]
+
+const galleryImageSources = portfolioImageNames.map((imageName) => `${portfolioBasePath}/${imageName}`)
 
 function FurnitureServices() {
   const { t } = useLanguage()

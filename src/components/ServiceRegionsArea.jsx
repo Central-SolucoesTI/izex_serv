@@ -26,7 +26,7 @@ function ServiceRegionsArea() {
         <div className="service-regions-map-wrap">
           <iframe
             title={t('serviceRegionsArea.mapTitle')}
-            src="https://www.google.com/maps?q=2691+Nottel+dr+Saint+Cloud+Fl+34772&output=embed"
+            src="https://www.google.com/maps?q=Orlando&output=embed"
             width="600"
             height="450"
             style={{ border: 0 }}

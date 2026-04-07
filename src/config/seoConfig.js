@@ -7,16 +7,16 @@ export const SITE_CONFIG = {
   socialProfiles: {
     facebook: 'https://www.facebook.com/izexservices',
     instagram: 'https://www.instagram.com/izexservices',
-    whatsapp: 'https://wa.me/15082154456',
+    whatsapp: 'https://wa.me/19788335051',
   },
   contact: {
-    phone: '+1 (508) 215-4456',
-    phoneClean: '15082154456',
+    phone: '978 833 5051',
+    phoneClean: '9788335051',
     email: 'info@izexservices.com',
-    address: '2691 Nottel dr Saint Cloud Fl 34772',
-    city: 'Saint Cloud',
+    address: 'Orlando',
+    city: 'Orlando',
     state: 'FL',
-    zipCode: '34772',
+    zipCode: '',
     country: 'US',
   },
   business: {

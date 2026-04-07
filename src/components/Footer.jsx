@@ -13,7 +13,7 @@ function Footer() {
         <div className="footer-cta-content">
           <h2>{t('globalFooter.ctaTitle')}</h2>
           <p>{t('globalFooter.ctaSubtitle')}</p>
-          <a className="cta-button" href="https://wa.me/15082154456" target="_blank" rel="noreferrer">
+          <a className="cta-button" href="https://wa.me/19788335051" target="_blank" rel="noreferrer">
             {t('common.whatsappCta')}
           </a>
         </div>

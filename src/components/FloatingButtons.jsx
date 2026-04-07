@@ -5,8 +5,8 @@ import './FloatingButtons.css'
 export default function FloatingButtons() {
   const { t } = useLanguage()
 
-  const phoneNumber = '+1 (508) 215-4456'
-  const whatsappNumber = '15082154456'
+  const phoneNumber = '978 833 5051'
+  const whatsappNumber = '19788335051'
   const whatsappMessage = t('floatingButtons.whatsappMessage')
 
   const handleWhatsApp = () => {
