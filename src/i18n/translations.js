@@ -255,6 +255,8 @@ export const translations = {
       addressValue: 'Orlando, FL, EUA',
       contactTitle: 'Contato',
       contactValue: '978 833 5051',
+      emailTitle: 'E-mail',
+      emailValue: 'izexcleaning@gmail.com',
       copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     furnitureServices: {
@@ -360,6 +362,7 @@ export const translations = {
       brand: 'IZEX SERVICES LLC',
       address: 'Orlando, FL, EUA',
       phone: '978 833 5051',
+      email: 'izexservices@gmail.com',
       copyright: '© 2026 Izex. Todos os direitos reservados.',
     },
     floatingButtons: {
@@ -717,6 +720,8 @@ export const translations = {
       addressValue: 'Orlando, FL, USA',
       contactTitle: 'Contact',
       contactValue: '978 833 5051',
+      emailTitle: 'Email',
+      emailValue: 'izexcleaning@gmail.com',
       copyright: '© 2026 Izex. All rights reserved.',
     },
     furnitureServices: {
@@ -821,6 +826,7 @@ export const translations = {
       brand: 'IZEX SERVICES LLC',
       address: 'Orlando, FL, USA',
       phone: '978 833 5051',
+      email: 'izexservices@gmail.com',
       copyright: '© 2026 Izex. All rights reserved.',
     },
     floatingButtons: {

@@ -23,6 +23,13 @@ function CleaningFooter() {
               <p>{t('cleaningFooter.contactValue')}</p>
             </div>
 
+            <div className="cleaning-footer-block">
+              <h4>{t('cleaningFooter.emailTitle')}</h4>
+              <p>
+                <a href="mailto:izexcleaning@gmail.com">{t('cleaningFooter.emailValue')}</a>
+              </p>
+            </div>
+
             <div className="cleaning-footer-social" aria-label={t('cleaningFooter.socialAriaLabel')}>
               <a href="#" aria-label="Instagram">
                 <Camera size={18} aria-hidden="true" />

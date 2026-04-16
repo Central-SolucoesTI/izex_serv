@@ -25,6 +25,9 @@ function FurnitureFooter() {
             <h3>{t('furnitureFooter.brand')}</h3>
             <p>{t('furnitureFooter.address')}</p>
             <p>{t('furnitureFooter.phone')}</p>
+            <p>
+              <a href="mailto:izexservices@gmail.com">{t('furnitureFooter.email')}</a>
+            </p>
             <div className="furniture-footer-social" aria-label={t('furnitureFooter.socialAriaLabel')}>
               <a href="#" aria-label="Instagram">
                 <Camera size={18} aria-hidden="true" />
