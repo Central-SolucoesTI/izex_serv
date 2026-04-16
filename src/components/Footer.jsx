@@ -38,10 +38,20 @@ function Footer() {
               <p>{t('globalFooter.contactValue')}</p>
             </div>
             <div className="footer-social" aria-label={t('globalFooter.socialAriaLabel')}>
-              <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/izexservices/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
                 <FaInstagram size={18} aria-hidden="true" />
               </a>
-              <a href="#" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/people/Izex-Services-LLC/61573515443799/#"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+              >
                 <FaFacebookF size={18} aria-hidden="true" />
               </a>
             </div>
