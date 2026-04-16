@@ -29,15 +29,6 @@ function CleaningFooter() {
                 <a href="mailto:izexcleaning@gmail.com">{t('cleaningFooter.emailValue')}</a>
               </p>
             </div>
-
-            <div className="cleaning-footer-social" aria-label={t('cleaningFooter.socialAriaLabel')}>
-              <a href="#" aria-label="Instagram">
-                <Camera size={18} aria-hidden="true" />
-              </a>
-              <a href="#" aria-label="Facebook">
-                <Users size={18} aria-hidden="true" />
-              </a>
-            </div>
           </div>
 
           <nav className="cleaning-footer-nav" aria-label={t('cleaningFooter.navAriaLabel')}>

@@ -28,14 +28,6 @@ function FurnitureFooter() {
             <p>
               <a href="mailto:izexservices@gmail.com">{t('furnitureFooter.email')}</a>
             </p>
-            <div className="furniture-footer-social" aria-label={t('furnitureFooter.socialAriaLabel')}>
-              <a href="#" aria-label="Instagram">
-                <Camera size={18} aria-hidden="true" />
-              </a>
-              <a href="#" aria-label="Facebook">
-                <Users size={18} aria-hidden="true" />
-              </a>
-            </div>
           </div>
 
           <nav className="furniture-footer-nav" aria-label={t('furnitureFooter.navAriaLabel')}>
