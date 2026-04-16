@@ -43,6 +43,17 @@
   line-height: 1.55;
 }
 
+.cleaning-footer-block p a {
+  color: #1b6ecf;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.cleaning-footer-block p a:hover,
+.cleaning-footer-block p a:focus-visible {
+  color: #144a99;
+}
+
 .cleaning-footer-social {
   display: flex;
   gap: 0.6rem;

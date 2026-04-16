@@ -96,6 +96,17 @@
   line-height: 1.6;
 }
 
+.furniture-footer-left a {
+  color: #f6a264;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.furniture-footer-left a:hover,
+.furniture-footer-left a:focus-visible {
+  color: #ffffff;
+}
+
 .furniture-footer-social {
   display: flex;
   gap: 0.6rem;
