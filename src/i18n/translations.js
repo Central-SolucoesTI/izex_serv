@@ -29,7 +29,7 @@ export const translations = {
       contactTitle: 'Entre em contato conosco',
       contactDescription:
         'Tem alguma dúvida ou quer solicitar um orçamento? Nossa equipe está pronta para te atender!',
-      channels: ['978 833 5051', 'WhatsApp', 'info@izexservices.com'],
+      channels: ['978 833 5051', '+1 978 833 5051', 'info@izexservices.com'],
       stepsTitle: 'Próximos passos',
       steps: [
         {
