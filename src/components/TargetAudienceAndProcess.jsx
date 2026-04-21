@@ -113,8 +113,14 @@ export default function TargetAudienceAndProcess() {
           </div>
 
           <div className="process-cta">
-            <button className="cta-button">{t('targetAudience.cta')}</button>
-          </div>
+            <a 
+              href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <button className="cta-button">{t('targetAudience.cta')}</button>
+            </a>
+        </div>
         </div>
       </section>
     </>

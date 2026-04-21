@@ -65,7 +65,7 @@ function ServicesSection() {
                     <Wrench size={16} aria-hidden="true" />
                     <span>{t('servicesSection.knowMore')}</span>
                   </Link>
-                  <a href="#contato" className="btn btn-outline">
+                  <a href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                     {t('servicesSection.contact')}
                   </a>
                 </div>

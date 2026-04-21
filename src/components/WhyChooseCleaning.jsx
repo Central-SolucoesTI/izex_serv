@@ -59,7 +59,12 @@ function WhyChooseCleaning() {
           <p className="why-choose-cleaning-footer">{t('whyChooseCleaning.footerText')}</p>
 
           <div className="why-choose-cleaning-cta-wrap">
-            <a className="why-choose-cleaning-cta" href="#contato">
+            <a
+              className="why-choose-cleaning-cta"
+              href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               {t('whyChooseCleaning.cta')}
             </a>
           </div>

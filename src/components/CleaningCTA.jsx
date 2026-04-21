@@ -10,7 +10,7 @@ function CleaningCTA() {
         <div className="cleaning-cta-content">
           <h2>{t('cleaningCTA.title')}</h2>
           <p>{t('cleaningCTA.subtitle')}</p>
-          <a className="cleaning-cta-button" href="https://wa.me/19788335051" target="_blank" rel="noreferrer">
+          <a className="cleaning-cta-button" href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer noopener">
             {t('cleaningCTA.button')}
           </a>
         </div>

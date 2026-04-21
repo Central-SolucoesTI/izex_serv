@@ -10,8 +10,8 @@ export default function FloatingButtons() {
   const whatsappMessage = t('floatingButtons.whatsappMessage')
 
   const handleWhatsApp = () => {
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
-    window.open(url, '_blank')
+    const url = `https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0`;
+    window.open(url, '_blank', 'noopener,noreferrer');
   }
 
   const handleSMS = () => {

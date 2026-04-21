@@ -70,8 +70,16 @@ export default function WhyChooseIzex() {
           <p className="why-choose-footer">{t('whyChoose.footerText')}</p>
 
           {/* CTA Button */}
+
           <div className="why-choose-cta">
-            <button className="why-choose-button">{t('whyChoose.cta')}</button>
+            <a
+              className="why-choose-button"
+              href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {t('whyChoose.cta')}
+            </a>
           </div>
         </div>
       </div>

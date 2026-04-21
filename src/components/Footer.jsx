@@ -13,7 +13,7 @@ function Footer() {
         <div className="footer-cta-content">
           <h2>{t('globalFooter.ctaTitle')}</h2>
           <p>{t('globalFooter.ctaSubtitle')}</p>
-          <a className="cta-button" href="https://wa.me/19788335051" target="_blank" rel="noreferrer">
+          <a className="cta-button" href="https://api.whatsapp.com/send/?phone=19788335051&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
             {t('common.whatsappCta')}
           </a>
         </div>
@@ -35,7 +35,15 @@ function Footer() {
             </div>
             <div className="footer-block">
               <h3>{t('globalFooter.contactTitle')}</h3>
-              <p>{t('globalFooter.contactValue')}</p>
+              <p>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=19788335051&text=Hi%21+I+would+like+to+request+a+quote.&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {t('globalFooter.contactValue')}
+                </a>
+              </p>
             </div>
             <div className="footer-social" aria-label={t('globalFooter.socialAriaLabel')}>
               <a

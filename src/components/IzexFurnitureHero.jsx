@@ -98,7 +98,9 @@ function IzexFurnitureHero() {
               ))}
             </ul>
 
-            <a className="furniture-cta" href="#contato">{t('furniturePage.heroCta')}</a>
+            <a className="furniture-cta" href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              {t('furniturePage.heroCta')}
+            </a>
           </div>
         </div>
       </section>

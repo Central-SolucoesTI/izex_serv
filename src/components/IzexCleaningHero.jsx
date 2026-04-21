@@ -100,7 +100,7 @@ function IzexCleaningHero() {
               ))}
             </ul>
 
-            <a className="cleaning-cta" href="#contato">
+            <a className="cleaning-cta" href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0">
               {t('cleaningPage.heroCta')}
             </a>
           </div>

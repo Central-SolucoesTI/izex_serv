@@ -39,7 +39,7 @@ function HowCleaningWorks() {
         </div>
 
         <div className="how-cleaning-works-cta-wrap">
-          <a className="how-cleaning-works-cta" href="#contato">
+          <a className="how-cleaning-works-cta" href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0">
             {t('howCleaningWorks.cta')}
           </a>
         </div>

@@ -200,7 +200,15 @@ export default function PrivacyPolicy() {
               <p>
                 <strong>Izex Services LLC</strong><br />
                 {t('privacyPolicy.address')}<br />
-                {t('privacyPolicy.phone')}: <a href="tel:+19788335051">978 833 5051</a><br />
+                {t('privacyPolicy.phone')}: <a href="tel:+19788335051">978 833 5051</a> —{' '}
+                <a
+                  href="https://api.whatsapp.com/send/?phone=19788335051&text=Hi%21+I+would+like+to+request+a+quote.&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  WhatsApp
+                </a>
+                <br />
                 {t('privacyPolicy.email')}: <a href="mailto:info@izexservices.com">info@izexservices.com</a>
               </p>
             </div>

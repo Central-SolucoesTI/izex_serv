@@ -13,7 +13,7 @@ function FurnitureFooter() {
         <div className="furniture-footer-cta-box">
           <h2>{t('furnitureFooter.ctaTitle')}</h2>
           <p>{t('furnitureFooter.ctaSubtitle')}</p>
-          <a href="https://wa.me/19788335051" target="_blank" rel="noreferrer">
+          <a href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0" target="_blank" rel="noreferrer noopener">
             {t('common.whatsappCta')}
           </a>
         </div>
@@ -24,7 +24,15 @@ function FurnitureFooter() {
           <div className="furniture-footer-left">
             <h3>{t('furnitureFooter.brand')}</h3>
             <p>{t('furnitureFooter.address')}</p>
-            <p>{t('furnitureFooter.phone')}</p>
+            <p>
+              <a
+                href="https://api.whatsapp.com/send/?phone=19788335051&text=Ola%21+Gostaria+de+solicitar+um+orcamento.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {t('furnitureFooter.phone')}
+              </a>
+            </p>
             <p>
               <a href="mailto:izexservices@gmail.com">{t('furnitureFooter.email')}</a>
             </p>
